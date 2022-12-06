@@ -1,0 +1,63 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 2%;
+  background-color: #f2f2f2;
+  z-index: 2;
+
+  .navigation {
+    display: flex;
+    width: 100%;
+
+    .logotype {
+      width: 30%;
+    }
+
+    .nav-menu {
+      font-family: "everett-medium";
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 50%;
+      font-size: 8px;
+
+      .nav-contact {
+        color: grey;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .info-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 44%;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      font-family: "ghost-regular";
+      font-size: 14px;
+      color: grey;
+      padding-right: 8%;
+
+      .description-title {
+        font-family: "everett-regular";
+        font-size: 18px;
+        color: black;
+      }
+    }
+
+    .logo {
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

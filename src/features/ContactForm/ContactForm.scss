@@ -1,0 +1,16 @@
+.contact_form_container {
+  position: absolute;
+  width: 25%;
+  height: 51%;
+  background-color: black;
+  z-index: 100;
+
+  .cf_content {
+    padding: 18% 9% 9% 9%;
+    .cf_title {
+      color: white;
+      font-size: 0.5em;
+      font-family: "ghost-regular";
+    }
+  }
+}

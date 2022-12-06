@@ -1,0 +1,114 @@
+.video_container,
+.video_container_active {
+  display: flex;
+  width: 54%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  background-color: #c6c6c6;
+  z-index: 1;
+  padding: 2% 2% 2% 0;
+  transition: right 1s ease-out;
+
+  .video_left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+    cursor: pointer;
+
+    .arrow-rigth {
+      padding-top: 6%;
+      font-size: 18px;
+      font-family: "everett-medium";
+    }
+    .learn_more {
+      font-size: 8px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-family: "everett-regular";
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1%;
+    width: 80%;
+    height: 100%;
+
+    .upper_text {
+      font-family: "ghost-regular";
+      font-size: 16px;
+    }
+
+    .items_box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      .items {
+        width: 50%;
+
+        .p_homeowners {
+          font-family: "ghost-regular";
+          font-size: 13px;
+          padding-right: 7%;
+        }
+
+        p {
+          font-family: "ghost-regular";
+          font-size: 13px;
+        }
+        .item_title {
+          font-family: "everett-regular";
+          font-size: 18px;
+        }
+        .item_learn_more {
+          color: #f2f2f2;
+          font-family: "everett-regular";
+          font-size: 8px;
+        }
+      }
+    }
+    .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .play {
+        position: absolute;
+        width: 5%;
+        height: 6%;
+      }
+    }
+  }
+}
+
+.video_container_active {
+  right: 46%;
+  transition: right 1s ease-out;
+
+  .video_left_side {
+    .arrow-rigth {
+      transform: rotate(180deg);
+    }
+  }
+
+  .upper-text {
+    font-size: 12px;
+    font-family: "ghost-regular";
+  }
+}

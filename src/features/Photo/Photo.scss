@@ -1,0 +1,15 @@
+.joint {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-container {
+  width: 100%;
+  height: 100%;
+
+  .background_photo {
+    width: 100%;
+    height: 100%;
+  }
+}
