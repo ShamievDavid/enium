@@ -15,7 +15,11 @@ export const ContactForm = () => {
         </div>
         <div className="cf_footer">
           <div className="cf_send">Send</div>
-          <img className="cf_logo" src="./assets/images/enium_logo.png" />
+          <img
+            className="cf_logo"
+            src="./assets/images/enium_logo.png"
+            alt="logo"
+          />
         </div>
       </div>
     </div>
