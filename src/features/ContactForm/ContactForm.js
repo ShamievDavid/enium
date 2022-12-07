@@ -3,7 +3,10 @@ import "./ContactForm.scss";
 
 export const ContactForm = () => {
   return (
-    <div className="contact_form_container">
+    <div
+      className="contact_form_container"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div className="cf_content">
         <div className="cf_title">Ask us a question or leave a message:</div>
         <div className="inputs">
