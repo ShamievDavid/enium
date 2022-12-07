@@ -1,5 +1,10 @@
-.container_main {
+.container_main,
+.container_main_blur {
   width: 100vw;
   height: 100vh;
   display: flex;
+}
+
+.container_main_blur {
+  filter: blur(0.3rem);
 }

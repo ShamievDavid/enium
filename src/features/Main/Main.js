@@ -6,7 +6,7 @@ import "./Main.scss";
 
 export const Main = ({ showForm, setShowForm }) => {
   return (
-    <div className="container_main">
+    <div className={showForm ? "container_main_blur" : "container_main"}>
       <Photo />
       <VideoBox />
       <InfoBox showForm={showForm} setShowForm={setShowForm} />
