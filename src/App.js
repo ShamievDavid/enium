@@ -5,7 +5,6 @@ import { Main } from "./features/Main/Main";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
-  console.log("showForm", showForm);
   return (
     <div className="app_container">
       <Main showForm={showForm} setShowForm={setShowForm} />

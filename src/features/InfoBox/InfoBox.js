@@ -1,4 +1,3 @@
-import { ContactForm } from "../ContactForm/ContactForm";
 import "./InfoBox.scss";
 
 export const InfoBox = ({ showForm, setShowForm }) => {
