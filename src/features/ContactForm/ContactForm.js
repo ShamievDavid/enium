@@ -26,7 +26,7 @@ export const ContactForm = ({ showForm, setShowForm }) => {
           </div>
           <img
             className="cf_logo"
-            src="./assets/images/enium_logo.png"
+            src="./assets/images/enium_s.png"
             alt="logo"
           />
         </div>
@@ -75,7 +75,7 @@ export const ContactForm = ({ showForm, setShowForm }) => {
           </button>
           <img
             className="cf_logo"
-            src="./assets/images/enium_logo.png"
+            src="./assets/images/enium_s.png"
             alt="logo"
           />
         </div>
