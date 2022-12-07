@@ -11,9 +11,14 @@ function App() {
   };
 
   return (
-    <div className="app_container" onClick={showForm && onContanctForm}>
+    <div
+      className="app_container"
+      onClick={showForm ? onContanctForm : undefined}
+    >
       <Main showForm={showForm} setShowForm={setShowForm} />
-      {showForm && <ContactForm />}
+      {showForm && (
+        <ContactForm showForm={showForm} setShowForm={setShowForm} />
+      )}
     </div>
   );
 }
