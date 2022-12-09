@@ -77,8 +77,25 @@
       font-size: 2.2vh;
     }
 
-    .cf_logo {
+    .cf_logo,
+    .cf_logo_sending {
       width: 1.4vw;
+    }
+
+    .cf_logo_sending {
+      animation-name: rotate;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(-360deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
   }
 }

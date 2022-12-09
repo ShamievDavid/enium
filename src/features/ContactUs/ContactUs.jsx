@@ -6,6 +6,7 @@ import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../api/email";
 
 export const ContactUs = ({ setShowForm, showForm }) => {
   const [sentMessage, setSentMessage] = useState(false);
+  const [loading, setLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,13 +15,17 @@ export const ContactUs = ({ setShowForm, showForm }) => {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
       (result) => {
-        console.log(result.text);
         setSentMessage(true);
+        setLoading(false);
       },
       (error) => {
         console.log(error.text);
       }
     );
+  };
+
+  const sending = () => {
+    setLoading(true);
   };
 
   const sentMessageView = (
@@ -62,10 +67,14 @@ export const ContactUs = ({ setShowForm, showForm }) => {
       />
       <textarea name="message" placeholder="Your message" />
       <div className="cf_footer">
-        <button type="submit" className="cf_send">
+        <button type="submit" className="cf_send" onClick={sending}>
           Send
         </button>
-        <img className="cf_logo" src="./assets/images/enium_s.png" alt="logo" />
+        <img
+          className={loading ? "cf_logo_sending" : "cf_logo"}
+          src="./assets/images/enium_s.png"
+          alt="logo"
+        />
       </div>
     </form>
   );
