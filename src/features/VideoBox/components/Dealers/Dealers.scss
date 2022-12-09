@@ -1,0 +1,113 @@
+@import "./src/styles/variables.scss";
+
+.dealers_container,
+.dealers_container_blur {
+  position: absolute;
+  background-image: url("../../../../../public/assets/images/dealers_bg.jpg");
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: $homeowners-z;
+  display: flex;
+
+  .dealers_left {
+    width: 30%;
+    padding: 2%;
+    height: 20%;
+
+    .dealers_logo {
+      z-index: 1000;
+      margin-bottom: 17vh;
+      .dealers_img_logo {
+        height: 3.4vh;
+      }
+    }
+
+    .dealers_title {
+      font-family: $everett-regular;
+      font-size: $font-m;
+      color: $summit-white;
+    }
+  }
+
+  .dealers_right {
+    width: 70%;
+    height: 80%;
+    padding: 2%;
+
+    .dealers_right_header {
+      margin-bottom: 16vh;
+      display: flex;
+      justify-content: space-between;
+
+      .dealers_contact {
+        margin-top: 0.6%;
+        color: $summit-white;
+        font-size: $font-s;
+      }
+
+      .dealers_close {
+        color: $summit-white;
+        font-size: $font-m;
+        font-family: $everett-regular;
+        line-height: 24px;
+      }
+    }
+
+    .dealers_right_content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      .dealers_rigth_text {
+        font-family: $ghost;
+        font-size: $font-m;
+        color: $summit-white;
+        padding: 2%;
+      }
+
+      .dealers_rigth_footer {
+        display: flex;
+        flex-direction: column;
+
+        .dealers_rigth_footer_title {
+          font-family: $everett-regular;
+          font-size: $font-m;
+          color: $charlice;
+          text-transform: uppercase;
+          border-bottom: 1px solid $charlice;
+          display: flex;
+          justify-content: center;
+          margin: 0 2% 0 2%;
+          padding: 1%;
+        }
+
+        .dealers_rigth_footer_content {
+          display: flex;
+          font-family: $ghost;
+          color: $summit-white;
+          font-size: 18px;
+
+          span {
+            color: $charlice;
+          }
+          .dealers_rigth_footer_content_left {
+            border-right: 1px solid $charlice;
+            padding: 2%;
+            width: 50%;
+          }
+
+          .dealers_rigth_footer_content_right {
+            padding: 2%;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dealers_container_blur {
+  filter: blur(0.3rem);
+}

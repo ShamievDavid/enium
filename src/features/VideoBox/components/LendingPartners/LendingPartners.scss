@@ -1,0 +1,117 @@
+@import "./src/styles/variables.scss";
+
+.lending_container,
+.lending_container_blur {
+  position: absolute;
+  background-image: url("../../../../../public/assets/images/lending_bg.jpg");
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: $homeowners-z;
+  display: flex;
+
+  .lending_left {
+    width: 30%;
+    padding: 2%;
+    height: 20%;
+
+    .lending_logo {
+      z-index: 1000;
+      margin-bottom: 17vh;
+      .lending_img_logo {
+        height: 3.4vh;
+      }
+    }
+
+    .lending_title {
+      font-family: $everett-regular;
+      font-size: $font-m;
+      color: $summit-white;
+    }
+  }
+
+  .lending_right {
+    width: 70%;
+    height: 80%;
+    padding: 2%;
+
+    .lending_right_header {
+      margin-bottom: 18vh;
+      display: flex;
+      justify-content: space-between;
+
+      .lending_contact {
+        margin-top: 0.6%;
+        color: $summit-white;
+        font-size: $font-s;
+      }
+
+      .lending_close {
+        color: $summit-white;
+        font-size: $font-m;
+        font-family: $everett-regular;
+        line-height: 24px;
+      }
+    }
+
+    .lending_right_content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      .lending_rigth_text {
+        font-family: $ghost;
+        font-size: $font-m;
+        color: $summit-white;
+      }
+
+      .lending_itembox {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+
+        .lending_item_header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2%;
+        }
+
+        .lending_item_number {
+          font-family: $everett-medium;
+        }
+
+        .lending_item_line {
+          margin-left: 5%;
+          margin-right: 5%;
+          height: 1px;
+          background: $summit-white;
+          width: 90%;
+        }
+
+        .lending_item_line_third {
+          display: none;
+        }
+
+        .lending_item_text {
+          font-family: $ghost;
+          font-size: 18px;
+          color: $summit-white;
+          width: 50%;
+        }
+      }
+
+      .lending_rigth_infobox {
+        display: flex;
+        justify-content: space-between;
+        font-family: $ghost;
+        font-size: 18px;
+        color: $summit-white;
+      }
+    }
+  }
+}
+
+.lending_container_blur {
+  filter: blur(0.3rem);
+}

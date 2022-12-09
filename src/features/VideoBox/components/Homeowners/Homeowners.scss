@@ -1,0 +1,102 @@
+@import "./src/styles/variables.scss";
+
+.homeowners_container,
+.homeowners_container_blur {
+  position: absolute;
+  background-image: url("../../../../../public/assets/images/homeowners_bg.jpg");
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: $homeowners-z;
+  display: flex;
+
+  .homeowners_left {
+    width: 30%;
+    padding: 2%;
+    height: 20%;
+
+    .homeowners_logo {
+      z-index: 1000;
+      margin-bottom: 17vh;
+      .homeowners_img_logo {
+        height: 3.4vh;
+      }
+    }
+
+    .homeowners_title {
+      font-family: $everett-regular;
+      font-size: $font-m;
+      color: $summit-white;
+    }
+  }
+
+  .homeowners_right {
+    width: 70%;
+    height: 80%;
+    padding: 2%;
+
+    .homeowners_info {
+      height: 100%;
+    }
+
+    .homeowners_right_header {
+      margin-bottom: 18vh;
+      display: flex;
+      justify-content: space-between;
+
+      .homeowners_contact {
+        margin-top: 0.6%;
+        color: $summit-white;
+        font-size: $font-s;
+      }
+
+      .homeowner_close {
+        color: $summit-white;
+        font-size: $font-m;
+        font-family: $everett-regular;
+        line-height: 24px;
+      }
+    }
+
+    .homeowners_right_content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      .homeowners_rigth_text {
+        font-family: $ghost;
+        font-size: $font-m;
+        color: $summit-white;
+      }
+
+      .homeowners_rigth_images_box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+
+        .homeowners_img {
+          height: 31vh;
+        }
+      }
+
+      .homeowners_rigth_infobox {
+        display: flex;
+        justify-content: space-between;
+        font-family: $ghost;
+        margin-top: 2%;
+        font-size: 16px;
+        color: $summit-white;
+      }
+
+      .homeowners_column {
+        width: 27%;
+        padding-right: 2%;
+      }
+    }
+  }
+}
+
+.homeowners_container_blur {
+  filter: blur(0.3rem);
+}
