@@ -25,12 +25,13 @@ export const InfoBox = ({ showForm, setShowForm }) => {
           <div className="description-title">ECG</div>
           <div>
             <div>
+              <br />
               Enium is committed to presenting innovative ways for each customer
               to be environmentally aware and fiscally responsible by providing
               finance solutions with integrity to every customer one project at
-              a time.
+              a time. <br />
               <br />
-              <br /> At Enium, we are passionate about connecting customers and
+              At Enium, we are passionate about connecting customers and
               contractors with terrific loan programs to improve the quality of
               life of all those within our reach.
             </div>

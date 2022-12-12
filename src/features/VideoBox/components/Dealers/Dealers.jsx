@@ -53,14 +53,14 @@ export const Dealers = ({ dealers, setDealers, showForm, setShowForm }) => {
                 need financing. I was so worried about being able to understand
                 everything. Prior to today`s conference, I felt in way over my
                 head. But this is a piece of cake. I feel like I`m walking on
-                sunshine.” <br />
-                <span>— Enium partner</span>
+                sunshine.”
+                <span> — Enium partner</span>
               </div>
               <div className="dealers_rigth_footer_content_right">
                 “I am truly thankful for the way Enium has been able to help me.
                 I have been able togo into homes confident that I am getting the
                 best deal and price per wattage.”
-                <span>— Enium partner</span>
+                <span> — Enium partner</span>
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
 @import "./src/styles/variables.scss";
 
 @media screen {
-  
 }
 .homeowners_container,
 .homeowners_container_blur {
@@ -28,7 +27,7 @@
 
     .homeowners_title {
       font-family: $everett-regular;
-      font-size: $font-m;
+      font-size: $font-l;
       color: $summit-white;
     }
   }
@@ -55,9 +54,9 @@
 
       .homeowner_close {
         color: $summit-white;
-        font-size: $font-m;
+        font-size: $font-l;
         font-family: $everett-regular;
-        line-height: 24px;
+        line-height: 1;
       }
     }
 
@@ -69,7 +68,10 @@
 
       .homeowners_rigth_text {
         font-family: $ghost;
-        font-size: $font-m;
+        font-size: $font-l;
+        line-height: 1.2;
+        font-weight: 400;
+
         color: $summit-white;
       }
 
@@ -87,8 +89,8 @@
         display: flex;
         justify-content: space-between;
         font-family: $ghost;
-        margin-top: 2%;
-        font-size: 16px;
+        margin-top: 1%;
+        font-size: $font-p;
         color: $summit-white;
       }
 
