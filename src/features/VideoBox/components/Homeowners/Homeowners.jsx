@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Homeowners.scss";
 
 export const Homeowners = ({
@@ -7,26 +7,6 @@ export const Homeowners = ({
   showForm,
   setShowForm,
 }) => {
-  useEffect(() => {
-    if (!window.location.hash && window.addEventListener) {
-      window.addEventListener("load", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-      window.addEventListener("orientationchange", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-      window.addEventListener("touchstart", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-    }
-  }, []);
-
   return (
     <div
       className={
