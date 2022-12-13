@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.scss";
 import { ContactUs } from "./features/ContactUs/ContactUs";
 import { Main } from "./features/Main/Main";
@@ -12,25 +12,25 @@ function App() {
   const [lendingPartners, setLendingPartners] = useState(false);
   const [dealers, setDealers] = useState(false);
 
-  useEffect(() => {
-    if (!window.location.hash && window.addEventListener) {
-      window.addEventListener("load", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-      window.addEventListener("orientationchange", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-      window.addEventListener("touchstart", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!window.location.hash && window.addEventListener) {
+  //     window.addEventListener("load", function () {
+  //       setTimeout(function () {
+  //         window.scrollTo(0, 0);
+  //       }, 0);
+  //     });
+  //     window.addEventListener("orientationchange", function () {
+  //       setTimeout(function () {
+  //         window.scrollTo(0, 0);
+  //       }, 0);
+  //     });
+  //     window.addEventListener("touchstart", function () {
+  //       setTimeout(function () {
+  //         window.scrollTo(0, 0);
+  //       }, 0);
+  //     });
+  //   }
+  // }, []);
 
   const onContanctForm = () => {
     setShowForm(false);
