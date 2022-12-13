@@ -85,10 +85,17 @@ export const VideoBox = ({
             </div>
           </div>
         </div>
-
         <div className="video">
-          <img src="./assets/images/video.png" alt="video-screen" />
-          <img className="play" src="./assets/images/play.png" alt="play" />
+          <div>
+            <img
+              className="img"
+              src="./assets/images/video.png"
+              alt="video-screen"
+            />
+          </div>
+          {/* <div>
+            <img className="play" src="./assets/images/play.png" alt="play" />
+          </div> */}
         </div>
       </div>
     </div>

@@ -38,7 +38,8 @@
   .info-footer {
     display: flex;
     justify-content: space-between;
-    height: 44%;
+    // align-items: center;
+    height: 44vh;
 
     .description {
       display: flex;
@@ -46,8 +47,8 @@
       justify-content: space-between;
       width: 50%;
       font-family: "ghost-regular";
-      font-size: $font-p;
-      line-height: 1.3;
+      font-size: $font-m;
+      line-height: 1.2;
       color: grey;
       padding-right: 8%;
       overflow: scroll;
@@ -59,11 +60,17 @@
       }
     }
 
-    .logo {
-      position: relative;
-      width: 100%;
-      height: auto;
-      box-sizing: border-box;
+    .infobox_img_container {
+      margin-top: 5%;
+      width: 48%;
+      align-content: center;
+
+      .logo {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+      }
     }
   }
 }

@@ -34,6 +34,7 @@
       writing-mode: vertical-rl;
       transform: rotate(180deg);
       font-family: "everett-regular";
+      line-height: 1;
     }
   }
 
@@ -43,7 +44,7 @@
     justify-content: space-between;
     padding-top: 1%;
     width: 80%;
-    height: 96%;
+    height: 100%;
 
     .upper_text {
       font-family: "ghost-regular";
@@ -53,12 +54,11 @@
 
     .items_box {
       width: 100%;
-      height: 100%;
+      height: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
-      padding: 6% 0 10% 0;
+      padding: 6% 0 6% 0;
 
       .items_upper {
         display: flex;
@@ -67,7 +67,7 @@
 
       .items_footer {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
       }
 
       .items,
@@ -77,22 +77,23 @@
         justify-content: space-between;
         margin-top: 2%;
 
+        .item_title {
+          font-family: "everett-regular";
+          font-size: $font-m;
+          margin-bottom: 4%;
+        }
+
         .p_homeowners {
           padding-right: 7%;
-          font-size: $font-p;
         }
 
         p,
         .p_homeowners {
           font-family: "ghost-regular";
           font-size: $font-p;
-          margin-bottom: 1%;
+          margin-bottom: 2%;
         }
-        .item_title {
-          font-family: "everett-regular";
-          font-size: $font-m;
-          margin-bottom: 4%;
-        }
+
         .item_learn_more {
           color: #f2f2f2;
           font-family: "everett-regular";
@@ -103,22 +104,24 @@
       .item_dealers {
         width: 49%;
       }
-    }
-    .video {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 40%;
 
-      img {
-        width: 100%;
-      }
+      .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
 
-      .play {
-        position: absolute;
-        width: 5%;
-        height: 6%;
+        .img {
+          width: 100%;
+          // height: auto;
+        }
+
+        .play {
+          position: absolute;
+          top: 1px;
+          width: 5%;
+          height: 6%;
+        }
       }
     }
   }

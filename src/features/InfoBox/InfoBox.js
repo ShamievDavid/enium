@@ -37,7 +37,7 @@ export const InfoBox = ({ showForm, setShowForm }) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="infobox_img_container">
           <img
             className="logo"
             src="./assets/images/enium_logo.png"
