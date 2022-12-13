@@ -9,36 +9,32 @@
   height: 100vh;
   z-index: $homeowners-z;
   display: flex;
+  flex-direction: column;
 
-  .lending_left {
-    width: 30%;
+  .lending_header {
+    display: flex;
+    justify-content: space-between;
     padding: 2%;
-    height: 20%;
+    margin-bottom: 13vh;
 
-    .lending_logo {
-      z-index: 1000;
-      margin-bottom: 17vh;
-      .lending_img_logo {
-        height: 3.4vh;
+    .lending_header_right {
+      width: 30%;
+
+      .lending_logo {
+        z-index: 1000;
+
+        .lending_img_logo {
+          width: 10vw;
+          height: auto;
+        }
       }
     }
 
-    .lending_title {
-      font-family: $everett-regular;
-      font-size: $font-l;
-      color: $summit-white;
-    }
-  }
-
-  .lending_right {
-    width: 70%;
-    height: 80%;
-    padding: 2%;
-
-    .lending_right_header {
-      margin-bottom: 18vh;
+    .lending_header_left {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      width: 70%;
 
       .lending_contact {
         margin-top: 0.6%;
@@ -51,70 +47,91 @@
         font-size: $font-l;
         font-family: $everett-regular;
         line-height: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .lending_content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+
+    .lending_content_right {
+      width: 30%;
+
+      .lending_title {
+        font-family: $everett-regular;
+        font-size: $font-l;
+        color: $summit-white;
       }
     }
 
-    .lending_right_content {
+    .lending_content_left {
+      width: 70%;
       display: flex;
       flex-direction: column;
-      height: 100%;
-      justify-content: space-between;
 
-      .lending_rigth_text {
+      .lending_text {
         font-family: $ghost;
         font-size: $font-l;
         line-height: 1.2;
         color: $summit-white;
       }
 
-      .lending_itembox {
+      .lending_infobox {
         display: flex;
-        flex-direction: column;
-        width: 33%;
-
-        .lending_item_header {
-          display: flex;
-          align-items: center;
-          margin-bottom: 2%;
-        }
-
-        .lending_item_number {
-          font-family: $everett-medium;
-          font-size: $font-m;
-        }
-
-        .lending_item_line {
-          margin-left: 5%;
-          margin-right: 5%;
-          height: 1px;
-          background: $summit-white;
-          width: 90%;
-        }
-
-        .lending_item_line_third {
-          display: none;
-        }
-
-        .lending_item_text,
-        .lending_item_text_last {
-          font-family: $ghost;
-          font-size: $font-p;
-          line-height: 1.3;
-          color: $summit-white;
-          width: 50%;
-        }
-
-        .lending_item_text_last {
-          width: 100%;
-        }
-      }
-
-      .lending_rigth_infobox {
-        display: flex;
+        height: 100%;
         justify-content: space-between;
         font-family: $ghost;
         font-size: $font-p;
         color: $summit-white;
+
+        .lending_infobox_items {
+          display: flex;
+          flex-direction: column;
+          width: 33%;
+
+          .lending_item_header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2%;
+          }
+
+          .lending_item_number {
+            font-family: $everett-medium;
+            font-size: $font-m;
+          }
+
+          .lending_item_line {
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 1px;
+            background: $summit-white;
+            width: 90%;
+          }
+
+          .lending_item_line_third {
+            display: none;
+          }
+
+          .lending_item_text,
+          .lending_item_text_last {
+            font-family: $ghost;
+            font-size: $font-p;
+            line-height: 1.3;
+            color: $summit-white;
+            width: 50%;
+          }
+
+          .lending_item_text_last {
+            width: 100%;
+          }
+        }
+
+        .lending_rigth_infobox {
+        }
       }
     }
   }

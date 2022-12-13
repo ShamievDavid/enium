@@ -43,14 +43,13 @@ function App() {
         />
       )}
 
-      {lendingPartners && (
-        <LendingPartners
-          lendingPartners={lendingPartners}
-          setLendingPartners={setLendingPartners}
-          showForm={showForm}
-          setShowForm={setShowForm}
-        />
-      )}
+      <LendingPartners
+        lendingPartners={lendingPartners}
+        setLendingPartners={setLendingPartners}
+        showForm={showForm}
+        setShowForm={setShowForm}
+      />
+
       {dealers && (
         <Dealers
           dealers={dealers}

@@ -9,19 +9,17 @@ export const LendingPartners = ({
 }) => {
   return (
     <div className={showForm ? "lending_container_blur" : "lending_container"}>
-      <div className="lending_left">
-        <div className="lending_logo">
-          <img
-            className="lending_img_logo"
-            src="./assets/images/enium_white.png"
-            alt="enium logo"
-          />
+      <div className="lending_header">
+        <div className="lending_header_right">
+          <div className="lending_logo">
+            <img
+              className="lending_img_logo"
+              src="./assets/images/enium_white.png"
+              alt="enium logo"
+            />
+          </div>
         </div>
-        <div className="lending_title ">LENDING PARTNERS</div>
-      </div>
-
-      <div className="lending_right">
-        <div className="lending_right_header">
+        <div className="lending_header_left">
           <div
             className="lending_contact"
             onClick={() => setShowForm(!showForm)}
@@ -35,8 +33,14 @@ export const LendingPartners = ({
             ×
           </div>
         </div>
-        <div className="lending_right_content">
-          <div className="lending_rigth_text">
+      </div>
+
+      <div className="lending_content">
+        <div className="lending_content_right">
+          <div className="lending_title ">LENDING PARTNERS</div>
+        </div>
+        <div className="lending_content_left">
+          <div className="lending_text">
             Enium is always looking for forward thinking, innovative lending
             partners to expand our offering as we grow.
             <br />
@@ -46,13 +50,13 @@ export const LendingPartners = ({
             Solar is the key to energy freedom, a booming economy and a
             healthier planet.
           </div>
-          <div className="lending_rigth_images_box">
+          <div className="lending_images_box">
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <div className="lending_rigth_infobox">
-            <div className="lending_itembox">
+          <div className="lending_infobox">
+            <div className="lending_infobox_items">
               <div className="lending_item_header">
                 <div className="lending_item_number">1</div>
                 <div className="lending_item_line"></div>
@@ -61,14 +65,14 @@ export const LendingPartners = ({
                 Constant flow of high quality loans of super-prime borrowers.
               </div>
             </div>
-            <div className="lending_itembox">
+            <div className="lending_infobox_items">
               <div className="lending_item_header">
                 <div className="lending_item_number">2</div>
                 <div className="lending_item_line"></div>
               </div>
               <div className="lending_item_text">Vetted dealers.</div>
             </div>
-            <div className="lending_itembox">
+            <div className="lending_infobox_items">
               <div className="lending_item_header">
                 <div className="lending_item_number">3</div>
               </div>

@@ -5,7 +5,6 @@
   position: absolute;
   background-image: url("../../../../../public/assets/images/homeowners_bg.jpg");
   background-size: 100% 100%;
-  // background-size: cover;
   width: 100vw;
   height: 100vh;
   z-index: $homeowners-z;
@@ -48,6 +47,7 @@
         font-size: $font-l;
         font-family: $everett-regular;
         line-height: 1;
+        cursor: pointer;
       }
     }
   }
@@ -166,6 +166,7 @@
           font-size: 36px;
           font-family: $everett-regular;
           line-height: 1;
+          cursor: pointer;
         }
       }
     }
