@@ -12,7 +12,6 @@
   z-index: 1;
   padding: 2% 2% 2% 0;
   transition: right 1s ease-out;
-  overflow: hidden;
 
   .video_left_side {
     display: flex;
@@ -145,6 +144,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     position: absolute;
     right: 0;
     top: 95%;
@@ -152,7 +152,6 @@
     background-color: #c6c6c6;
     z-index: 100;
     transition: top 1s ease-out;
-    overflow: hidden;
     padding: 3% 5% 5% 5%;
 
     .video_left_side {
@@ -244,7 +243,7 @@
           }
 
           .item_learn_more {
-            color: #f2f2f2;
+            color: $summit-white;
             font-family: "everett-regular";
             font-size: 12px;
             cursor: pointer;
@@ -280,6 +279,10 @@
     top: 7.4%;
     width: 100%;
     transition: top 1s ease-out;
+
+    .video {
+      display: none;
+    }
 
     .video_left_side {
       .arrow-rigth {
