@@ -8,7 +8,7 @@
   width: 50%;
   height: 100%;
   padding: 2%;
-  background-color: #f2f2f2;
+  background-color: $summit-white;
   z-index: 2;
 
   .navigation {
@@ -30,7 +30,7 @@
       cursor: pointer;
 
       .nav-contact {
-        color: grey;
+        color: $charlice;
         cursor: pointer;
       }
     }
@@ -38,39 +38,135 @@
 
   .info-footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    // align-items: center;
-    height: 44vh;
+    height: 36vh;
 
-    .description {
+    .info_footer_header {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 50%;
-      font-family: "ghost-regular";
-      font-size: $font-m;
-      line-height: 1.2;
-      color: grey;
-      padding-right: 8%;
-      overflow: scroll;
+      width: 100%;
 
       .description-title {
         font-family: "everett-regular";
         font-size: $font-m;
         color: black;
       }
+
+      .infobox_img_container {
+        width: 50%;
+        align-content: center;
+
+        .logo {
+          position: relative;
+          width: 8%;
+          height: auto;
+        }
+      }
     }
 
-    .infobox_img_container {
-      margin-top: 5%;
-      width: 48%;
-      align-content: center;
+    .description {
+      display: flex;
+      justify-content: space-between;
+      font-family: "ghost-regular";
+      font-size: $font-m;
+      line-height: 1.2;
+      color: $charlice;
+      overflow: scroll;
+      width: 100%;
 
-      .logo {
-        position: relative;
+      .empty_block {
+        width: 50%;
+      }
+
+      .description_text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .info {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 96%;
+    padding: 5%;
+
+    .navigation {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      .logotype {
         width: 100%;
-        height: auto;
-        box-sizing: border-box;
+      }
+
+      .nav-menu {
+        font-family: "everett-medium";
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.05em;
+        margin-top: 50%;
+
+        .nav-link {
+          display: none;
+        }
+
+        .nav-contact {
+          color: $charlice;
+          cursor: pointer;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .info-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50%;
+      width: 100%;
+
+      .info_footer_header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+        .description-title {
+          font-family: "everett-regular";
+          font-size: 28px;
+          color: $jet-black;
+          width: 50%;
+        }
+
+        .infobox_img_container {
+          display: flex;
+          justify-content: end;
+          width: 50%;
+
+          .logo {
+            position: relative;
+            width: 15%;
+            height: auto;
+          }
+        }
+      }
+
+      .description {
+        font-size: $font-m;
+        line-height: 1.2;
+        width: 100%;
+
+        .empty_block {
+          display: none;
+        }
+
+        .description_text {
+          width: 100%;
+          font-size: 19px;
+        }
       }
     }
   }

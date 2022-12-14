@@ -114,7 +114,6 @@
 
         .img {
           width: 100%;
-          // height: auto;
         }
 
         .play {
@@ -136,6 +135,158 @@
     .arrow-rigth {
       padding-top: 6%;
       transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .video_container,
+  .video_container_active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 95%;
+    box-sizing: border-box;
+    background-color: #c6c6c6;
+    z-index: 100;
+    transition: top 1s ease-out;
+    overflow: hidden;
+    padding: 3% 5% 5% 5%;
+
+    .video_left_side {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      height: 2%;
+      width: 100%;
+      margin-bottom: 30px;
+      cursor: pointer;
+
+      .arrow-rigth {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-family: "everett-medium";
+        transform: rotate(90deg);
+        height: auto;
+        padding-bottom: 3%;
+      }
+
+      .learn_more {
+        font-size: 14px;
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        font-family: "everett-regular";
+        line-height: 1;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+
+      .upper_text {
+        font-family: "ghost-regular";
+        font-size: 24px;
+        line-height: 1.3;
+        width: 100%;
+        margin-bottom: 90px;
+      }
+
+      .items_box {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 6% 0 6% 0;
+
+        .items_upper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .items_footer {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .items,
+        .item_dealers {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-top: 0;
+          margin-bottom: 47px;
+
+          .item_title {
+            font-family: "everett-regular";
+            font-size: 18px;
+            margin-bottom: 4%;
+          }
+
+          .p_homeowners {
+            padding-right: 0;
+          }
+
+          p,
+          .p_homeowners {
+            font-family: "ghost-regular";
+            font-size: 18px;
+            margin-bottom: 2%;
+          }
+
+          .item_learn_more {
+            color: #f2f2f2;
+            font-family: "everett-regular";
+            font-size: 12px;
+            cursor: pointer;
+          }
+        }
+
+        .item_dealers {
+          width: 100%;
+        }
+
+        .video {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+
+          .img {
+            width: 100%;
+          }
+
+          .play {
+            position: absolute;
+            top: 1px;
+            width: 5%;
+            height: 6%;
+          }
+        }
+      }
+    }
+  }
+
+  .video_container_active {
+    top: 7.4%;
+    width: 100%;
+    transition: top 1s ease-out;
+
+    .video_left_side {
+      .arrow-rigth {
+        transform: rotate(-90deg);
+        font-size: 18px;
+        padding-bottom: 6%;
+      }
     }
   }
 }

@@ -4,7 +4,13 @@
   height: 100vh;
   display: flex;
 }
-
+@media (max-width: 600px) {
+  .container_main,
+  .container_main_blur {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container_main_blur {
   filter: blur(0.3rem);
 }
