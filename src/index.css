@@ -25,9 +25,13 @@
   font-style: normal;
 }
 
+html {
+  height: -webkit-fill-available;
+}
 body {
   font-size: 30px;
   margin: 0;
+  height: -webkit-fill-available;
 }
 
 code {
