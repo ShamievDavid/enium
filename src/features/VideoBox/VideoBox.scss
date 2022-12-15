@@ -110,17 +110,6 @@
         justify-content: center;
         align-items: center;
         width: 50%;
-
-        .img {
-          width: 100%;
-        }
-
-        .play {
-          position: absolute;
-          top: 1px;
-          width: 5%;
-          height: 6%;
-        }
       }
     }
   }
@@ -148,7 +137,6 @@
     position: absolute;
     right: 0;
     top: -96vh;
-    box-sizing: border-box;
     z-index: 100;
     transition: top 1s ease-out;
     padding: 0 5vw;
@@ -160,7 +148,6 @@
       align-items: center;
       height: 4vh;
       width: 100%;
-      cursor: pointer;
 
       .arrow-rigth {
         display: flex;
@@ -251,13 +238,13 @@
         .item_dealers {
           width: 100%;
         }
+      }
 
-        .video {
+      .video {
+        display: none;
+
+        .img_video {
           display: none;
-
-          .img {
-            width: 1000px;
-          }
         }
       }
     }
@@ -269,7 +256,11 @@
     transition: top 1s ease-out;
 
     .video {
-      display: none !important;
+      display: none;
+
+      .img_video {
+        display: none;
+      }
     }
 
     .video_left_side {
