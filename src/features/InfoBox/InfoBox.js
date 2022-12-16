@@ -20,7 +20,7 @@ export const InfoBox = ({ showForm, setShowForm }) => {
           </div>
         </div>
       </div>
-      <div className="info-footer">
+      <div className="info_footer">
         <div className="info_footer_header">
           <div className="infobox_img_container">
             <img
@@ -29,7 +29,7 @@ export const InfoBox = ({ showForm, setShowForm }) => {
               alt="logo"
             />
           </div>
-          <div className="description-title">ECG</div>
+          <div className="description_title">ECG</div>
         </div>
         <div className="description">
           <div className="empty_block"></div>

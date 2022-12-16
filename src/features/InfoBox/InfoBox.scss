@@ -36,7 +36,7 @@
     }
   }
 
-  .info-footer {
+  .info_footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,7 +46,7 @@
       display: flex;
       width: 100%;
 
-      .description-title {
+      .description_title {
         font-family: "everett-regular";
         font-size: $font-m;
         color: black;
@@ -123,14 +123,14 @@
       }
     }
 
-    .info-footer {
+    .info_footer {
       display: flex;
       position: absolute;
       flex-direction: column;
       justify-content: space-between;
       height: 40%;
-      width: 100vw;
-      bottom: 8.8vh;
+      width: 92%;
+      top: 400px;
       left: 0;
       padding: 4vw;
 
@@ -140,7 +140,7 @@
         justify-content: flex-start;
         align-items: center;
 
-        .description-title {
+        .description_title {
           font-family: "everett-regular";
           font-size: 28px;
           color: $jet-black;

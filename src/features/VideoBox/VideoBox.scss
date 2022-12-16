@@ -104,12 +104,18 @@
       .item_dealers {
         width: 49%;
       }
+    }
 
-      .video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+    .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+
+      .video_img {
+        width: 100%;
+        height: auto;
       }
     }
   }
@@ -243,7 +249,7 @@
       .video {
         display: none;
 
-        .img_video {
+        .video_img {
           display: none;
         }
       }
@@ -258,7 +264,7 @@
     .video {
       display: none;
 
-      .img_video {
+      .video_img {
         display: none;
       }
     }

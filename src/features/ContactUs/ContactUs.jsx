@@ -67,9 +67,9 @@ export const ContactUs = ({ setShowForm, showForm }) => {
       />
       <textarea name="message" placeholder="Your message" />
       <div className="cf_footer">
-        <button type="submit" className="cf_send" onClick={sending}>
+        <div type="submit" className="cf_send" onClick={sending}>
           Send
-        </button>
+        </div>
         <img
           className={loading ? "cf_logo_sending" : "cf_logo"}
           src="./assets/images/enium_s.png"

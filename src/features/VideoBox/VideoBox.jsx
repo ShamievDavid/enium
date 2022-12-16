@@ -86,9 +86,8 @@ export const VideoBox = ({
           </div>
         </div>
         <div className="video">
-          efwlekfnewn
           <img
-            loading="lazy"
+            className="video_img"
             src="./assets/images/video.png"
             alt="video-screen"
           />

@@ -13,16 +13,24 @@ export const Homeowners = ({
         showForm ? "homeowners_container_blur" : "homeowners_container"
       }
     >
+      <div className="homeowners_bg">
+        <img
+          className="homeowners_bg_img"
+          alt="homeowners bg"
+          src="./assets/images/enium_homeowners_bg.jpg"
+        />
+      </div>
       <div className="homeowners_header">
         <div className="homeowners_header_right">
           <div className="homeowners_logo">
             <img
               className="homeowners_img_logo"
-              src="./assets/images/enium_white.png"
+              src="./assets/images/enium_concept.png"
               alt="enium logo"
             />
           </div>
         </div>
+
         <div className="homeowners_header_left">
           <div
             className="homeowners_contact"
@@ -41,7 +49,7 @@ export const Homeowners = ({
 
       <div className="homeowners_content">
         <div className="homeowners_content_right">
-          <div className="homeowners_title ">HOMEOWNERS</div>
+          <div className="homeowners_title">HOMEOWNERS</div>
         </div>
         <div className="homeowners_content_left">
           <div className="homeowners_text">

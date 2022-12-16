@@ -3,13 +3,24 @@
 .lending_container,
 .lending_container_blur {
   position: absolute;
-  background-image: url("../../../../../public/assets/images/lending_bg.jpg");
-  background-size: 100% 100%;
+  background-color: $summit-white;
   width: 100vw;
   height: 100vh;
   z-index: $homeowners-z;
   display: flex;
   flex-direction: column;
+
+  .lending_bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+
+    .lending_bg_img {
+      width: 100%;
+      height: 50%;
+    }
+  }
 
   .lending_header {
     display: flex;
@@ -38,13 +49,13 @@
 
       .lending_contact {
         margin-top: 0.6%;
-        color: $summit-white;
+        color: $charlice;
         font-size: $font-s;
         font-family: $everett-medium;
       }
 
       .lending_close {
-        color: $summit-white;
+        color: $jet-black;
         font-size: $font-l;
         font-family: $everett-regular;
         line-height: 1;
@@ -65,7 +76,7 @@
       .lending_title {
         font-family: $everett-regular;
         font-size: $font-l;
-        color: $summit-white;
+        color: $jet-black;
       }
     }
 
@@ -78,7 +89,7 @@
         font-family: $ghost;
         font-size: $font-l;
         line-height: 1.2;
-        color: $summit-white;
+        color: $jet-black;
       }
 
       .lending_infobox {
@@ -88,6 +99,7 @@
         font-family: $ghost;
         font-size: $font-p;
         color: $summit-white;
+        margin-top: 25%;
 
         .lending_infobox_items {
           display: flex;

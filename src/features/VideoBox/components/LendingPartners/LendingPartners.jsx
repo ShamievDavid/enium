@@ -9,12 +9,19 @@ export const LendingPartners = ({
 }) => {
   return (
     <div className={showForm ? "lending_container_blur" : "lending_container"}>
+      <div className="lending_bg">
+        <img
+          className="lending_bg_img"
+          alt="homeowners bg"
+          src="./assets/images/enium_lending_partners_bg.jpg"
+        />
+      </div>
       <div className="lending_header">
         <div className="lending_header_right">
           <div className="lending_logo">
             <img
               className="lending_img_logo"
-              src="./assets/images/enium_white.png"
+              src="./assets/images/enium_concept.png"
               alt="enium logo"
             />
           </div>
@@ -42,13 +49,10 @@ export const LendingPartners = ({
         <div className="lending_content_left">
           <div className="lending_text">
             Enium is always looking for forward thinking, innovative lending
-            partners to expand our offering as we grow.
-            <br />
-            <br />
-            Today, solar energy is attainable and affordable, benefiting you
-            financially in the long run while also benefiting the environment.
-            Solar is the key to energy freedom, a booming economy and a
-            healthier planet.
+            partners to expand our offering as we grow. Today, solar energy is
+            attainable and affordable, benefiting you financially in the long
+            run while also benefiting the environment. Solar is the key to
+            energy freedom, a booming economy and a healthier planet.
           </div>
           <div className="lending_images_box">
             <div></div>

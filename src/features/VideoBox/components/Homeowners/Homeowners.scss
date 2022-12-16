@@ -3,19 +3,30 @@
 .homeowners_container,
 .homeowners_container_blur {
   position: absolute;
-  background-image: url("../../../../../public/assets/images/homeowners_bg.jpg");
-  background-repeat: space repeat;
+  background-color: $summit-white;
   width: 100vw;
   height: 100vh;
-  z-index: $homeowners-z;
+  z-index: 1001;
   display: flex;
   flex-direction: column;
+
+  .homeowners_bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+
+    .homeowners_bg_img {
+      width: 100%;
+      height: 50%;
+    }
+  }
 
   .homeowners_header {
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    margin-bottom: 13vh;
+    margin-bottom: 18vh;
 
     .homeowners_header_right {
       width: 30%;
@@ -38,13 +49,13 @@
 
       .homeowners_contact {
         margin-top: 0.6%;
-        color: $summit-white;
+        color: $charlice;
         font-size: $font-s;
         font-family: $everett-medium;
       }
 
       .homeowner_close {
-        color: $summit-white;
+        color: $jet-black;
         font-size: $font-l;
         font-family: $everett-regular;
         line-height: 1;
@@ -65,7 +76,7 @@
       .homeowners_title {
         font-family: $everett-regular;
         font-size: $font-l;
-        color: $summit-white;
+        color: $jet-black;
       }
     }
 
@@ -79,13 +90,13 @@
         font-size: $font-l;
         line-height: 1.2;
         font-weight: 400;
-        color: $summit-white;
-        margin-bottom: 10%;
+        color: $jet-black;
       }
 
       .homeowners_images_box {
         display: flex;
         justify-content: space-between;
+        margin-top: 7%;
 
         .homeowners_content_item {
           display: flex;
