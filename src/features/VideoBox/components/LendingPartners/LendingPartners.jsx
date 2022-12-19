@@ -9,13 +9,6 @@ export const LendingPartners = ({
 }) => {
   return (
     <div className={showForm ? "lending_container_blur" : "lending_container"}>
-      <div className="lending_bg">
-        <img
-          className="lending_bg_img"
-          alt="homeowners bg"
-          src="./assets/images/enium_lending_partners_bg.jpg"
-        />
-      </div>
       <div className="lending_header">
         <div className="lending_header_right">
           <div className="lending_logo">
@@ -54,43 +47,34 @@ export const LendingPartners = ({
             run while also benefiting the environment. Solar is the key to
             energy freedom, a booming economy and a healthier planet.
           </div>
-          <div className="lending_images_box">
-            <div></div>
-            <div></div>
-            <div></div>
+        </div>
+      </div>
+      <div className="lending_footer">
+        <div className="lending_footer_left"></div>
+        <div className="lending_infobox">
+          <div className="lending_infobox_items">
+            <div className="lending_item_header">
+              <div className="lending_item_number">1</div>
+              <div className="lending_item_line"></div>
+            </div>
+            <div className="lending_item_text">
+              Constant flow of high quality loans of super-prime borrowers.
+            </div>
           </div>
-          <div className="lending_infobox">
-            {/* <div className="lending_text_img_box">
-              <img
-                alt="text"
-                className="lending_text_img"
-                src="./assets/images/enium_web-site_mobile_text_lending partners.png"
-              />
-            </div> */}
-            <div className="lending_infobox_items">
-              <div className="lending_item_header">
-                <div className="lending_item_number">1</div>
-                <div className="lending_item_line"></div>
-              </div>
-              <div className="lending_item_text">
-                Constant flow of high quality loans of super-prime borrowers.
-              </div>
+          <div className="lending_infobox_items">
+            <div className="lending_item_header">
+              <div className="lending_item_number">2</div>
+              <div className="lending_item_line"></div>
             </div>
-            <div className="lending_infobox_items">
-              <div className="lending_item_header">
-                <div className="lending_item_number">2</div>
-                <div className="lending_item_line"></div>
-              </div>
-              <div className="lending_item_text">Vetted dealers.</div>
+            <div className="lending_item_text">Vetted dealers.</div>
+          </div>
+          <div className="lending_infobox_items">
+            <div className="lending_item_header">
+              <div className="lending_item_number">3</div>
             </div>
-            <div className="lending_infobox_items">
-              <div className="lending_item_header">
-                <div className="lending_item_number">3</div>
-              </div>
-              <div className="lending_item_text_last">
-                Simple plug and play solution to enable lending partners to
-                easily expand into the renewable energy lending sector.
-              </div>
+            <div className="lending_item_text_last">
+              Simple plug and play solution to enable lending partners to easily
+              expand into the renewable energy lending sector.
             </div>
           </div>
         </div>
