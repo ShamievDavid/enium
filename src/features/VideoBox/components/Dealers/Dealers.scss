@@ -52,6 +52,7 @@
         color: $charlice;
         font-size: $font-s;
         font-family: $everett-medium;
+        cursor: pointer;
       }
 
       .dealers_close {
@@ -59,6 +60,7 @@
         font-size: $font-l;
         font-family: $everett-regular;
         line-height: 1;
+        cursor: pointer;
       }
     }
   }
