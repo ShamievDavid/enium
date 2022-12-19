@@ -9,6 +9,7 @@
   z-index: $homeowners-z;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   .lending_header {
     display: flex;
