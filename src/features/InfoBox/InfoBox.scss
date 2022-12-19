@@ -128,9 +128,9 @@
       position: absolute;
       flex-direction: column;
       justify-content: space-between;
-      height: 40%;
+      height: 36%;
       width: 92%;
-      top: 400px;
+      top: 53%;
       left: 0;
       padding: 4vw;
 
@@ -173,6 +173,8 @@
         .description_text {
           width: 100%;
           font-size: 19px;
+          margin: 0;
+          padding: 0;
         }
       }
     }

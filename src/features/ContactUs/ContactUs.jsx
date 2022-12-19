@@ -31,9 +31,13 @@ export const ContactUs = ({ setShowForm, showForm }) => {
   const sentMessageView = (
     <div className="contact_us_container" onClick={(e) => e.stopPropagation()}>
       <div className="cf_content_sent">
-        <div className="cf_title">
-          Your message successfully sent! Thank you! Talk to you soon.
+        <div className="cf_header">
+          <div className="cf_title">
+            Your message successfully sent! Thank you! Talk to you soon.
+          </div>
+          <div className="cf_close">×</div>
         </div>
+
         <div className="cf_footer">
           <div className="cf_send" onClick={() => setShowForm(!showForm)}>
             Back
@@ -55,7 +59,12 @@ export const ContactUs = ({ setShowForm, showForm }) => {
       className="contact_us_container"
       onClick={(e) => e.stopPropagation()}
     >
-      <div className="cf_title">Ask us a question or leave a message:</div>
+      <div className="cf_header">
+        <div className="cf_close" onClick={() => setShowForm(!showForm)}>
+          ×
+        </div>
+        <div className="cf_title">Ask us a question or leave a message:</div>
+      </div>
       <input type="text" name="reason" placeholder="Reason for contact" />
       <input type="text" name="name" placeholder="Your name" />
       <input type="email" name="email" placeholder="Your email" />

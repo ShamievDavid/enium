@@ -60,6 +60,13 @@ export const LendingPartners = ({
             <div></div>
           </div>
           <div className="lending_infobox">
+            {/* <div className="lending_text_img_box">
+              <img
+                alt="text"
+                className="lending_text_img"
+                src="./assets/images/enium_web-site_mobile_text_lending partners.png"
+              />
+            </div> */}
             <div className="lending_infobox_items">
               <div className="lending_item_header">
                 <div className="lending_item_number">1</div>

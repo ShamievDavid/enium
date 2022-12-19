@@ -8,7 +8,7 @@
   position: absolute;
   right: 0;
   box-sizing: border-box;
-  background-color: $charlice;
+  background-color: $sterling-silver;
   z-index: 1;
   padding: 2% 2% 2% 0;
   transition: right 1s ease-out;
@@ -42,7 +42,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 1%;
-    width: 80%;
+    width: 82%;
     height: 100%;
 
     .upper_text {
@@ -55,34 +55,25 @@
       width: 100%;
       height: 80%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row-reverse;
       justify-content: space-between;
-      padding: 6% 0 6% 0;
+      flex-wrap: wrap;
+      padding: 10% 0 6% 0;
 
-      .items_upper {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .items_footer {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .items,
+      .item_lending,
+      .item_homeowners,
       .item_dealers {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin-top: 2%;
+        width: 50%;
+        padding-bottom: 4%;
 
         .item_title {
           font-family: "everett-regular";
           font-size: $font-m;
-          margin-bottom: 4%;
         }
 
-        .p_homeowners {
+        .paragraph_homeowners {
           padding-right: 7%;
         }
 
@@ -90,19 +81,15 @@
         .p_homeowners {
           font-family: "ghost-regular";
           font-size: $font-p;
-          margin-bottom: 2%;
         }
 
         .item_learn_more {
-          color: #f2f2f2;
+          color: $summit-white;
           font-family: "everett-regular";
           font-size: $font-s;
+          line-height: 1;
           cursor: pointer;
         }
-      }
-
-      .item_dealers {
-        width: 49%;
       }
     }
 
@@ -194,40 +181,47 @@
         width: 100%;
         height: 50%;
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 0;
         padding: 0;
-        margin-bottom: 3vh;
+        bottom: 0;
 
-        .items_upper {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-
-        .items_footer {
-          display: flex;
-          flex-direction: column-reverse;
-        }
-
-        .items,
+        .item_lending,
+        .item_homeowners,
         .item_dealers {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          margin-bottom: 5%;
+
+          width: 100%;
+          margin-bottom: 10%;
+          padding-bottom: 0;
+
+          .item_homeowners {
+            order: 3;
+          }
+
+          .item_lending {
+            order: 2;
+          }
+
+          .item_dealers {
+            order: 1;
+          }
 
           .item_title {
             font-family: "everett-regular";
-            font-size: 18px;
+            font-size: 20px;
           }
 
-          .p_homeowners {
+          .paragraph_homeowners {
             padding-right: 0;
           }
 
           p,
-          .p_homeowners {
+          .paragraph_homeowners {
             font-family: "ghost-regular";
             font-size: 18px;
             margin-bottom: 2%;
@@ -239,10 +233,6 @@
             font-size: 12px;
             cursor: pointer;
           }
-        }
-
-        .item_dealers {
-          width: 100%;
         }
       }
 

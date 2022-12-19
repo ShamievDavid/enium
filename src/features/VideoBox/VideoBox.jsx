@@ -28,60 +28,44 @@ export const VideoBox = ({
           customers. We do this by:
         </div>
         <div className="items_box">
-          <div className="items_upper">
-            <div className="items">
-              <div className="item_title">HOMEOWNERS</div>
-              <p className="p_homeowners">
-                Ensuring that every Homeowner is in a stronger and better
-                financial position than they were before we were introduced.
-              </p>
-              <div
-                className="item_learn_more"
-                onClick={() => setHomeowners(!homeowners)}
-              >
-                LEARN MORE
-              </div>
-            </div>
-            <div className="items">
-              <div className="item_title">LENDING PARTNERS</div>
-              <p>
-                Protecting our Lending Partners from unethical contractors and
-                keeping them current on changes in the industry.
-              </p>
-              <div
-                className="item_learn_more"
-                onClick={() => setLendingPartners(!lendingPartners)}
-              >
-                LEARN MORE
-              </div>
+          <div className="item_lending">
+            <div className="item_title">LENDING PARTNERS</div>
+            <p>
+              Protecting our Lending Partners from unethical contractors and
+              keeping them current on changes in the industry.
+            </p>
+            <div
+              className="item_learn_more"
+              onClick={() => setLendingPartners(!lendingPartners)}
+            >
+              LEARN MORE
             </div>
           </div>
-          <div className="items_footer">
-            <div className="items">
-              {/* <div className="item_title">DEALERS</div>
-              <p>
-                Ensuring every Dealer has the most competitive loan products
-                available and the best customer service experience.
-              </p>
-              <div
-                className="item_learn_more"
-                onClick={() => setDealers(!dealers)}
-              >
-                LEARN MORE
-              </div> */}
+          <div className="item_homeowners">
+            <div className="item_title">HOMEOWNERS</div>
+            <p className="paragraph_homeowners">
+              Ensuring that every Homeowner is in a stronger and better
+              financial position than they were before we were introduced.
+            </p>
+            <div
+              className="item_learn_more"
+              onClick={() => setHomeowners(!homeowners)}
+            >
+              LEARN MORE
             </div>
-            <div className="item_dealers">
-              <div className="item_title">DEALERS</div>
-              <p>
-                Ensuring every Dealer has the most competitive loan products
-                available and the best customer service experience.
-              </p>
-              <div
-                className="item_learn_more"
-                onClick={() => setDealers(!dealers)}
-              >
-                LEARN MORE
-              </div>
+          </div>
+
+          <div className="item_dealers">
+            <div className="item_title">DEALERS</div>
+            <p>
+              Ensuring every Dealer has the most competitive loan products
+              available and the best customer service experience.
+            </p>
+            <div
+              className="item_learn_more"
+              onClick={() => setDealers(!dealers)}
+            >
+              LEARN MORE
             </div>
           </div>
         </div>

@@ -26,11 +26,25 @@
     height: 100%;
   }
 
-  .cf_title {
-    color: $summit-white;
-    font-size: $font-m;
-    font-family: $ghost;
-    margin-bottom: 5%;
+  .cf_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cf_title {
+      display: flex;
+      color: $summit-white;
+      font-size: 2vh;
+      font-family: $ghost;
+      margin-bottom: 5%;
+    }
+
+    .cf_close {
+      display: none;
+      justify-content: flex-end;
+      color: $summit-white;
+      font-size: 20px;
+    }
   }
 
   input,
@@ -110,7 +124,7 @@
     flex-direction: column;
     position: absolute;
     width: 80%;
-    height: 60%;
+    height: 74vh;
     background-color: $jet-black;
     padding: 4%;
     z-index: 10000;
@@ -129,29 +143,43 @@
       height: 100%;
     }
 
-    .cf_title {
-      color: $summit-white;
-      font-size: 2vh;
-      font-family: $ghost;
-      margin-bottom: 5%;
+    .cf_header {
+      padding-bottom: 2%;
+
+      .cf_title {
+        color: $summit-white;
+        font-size: 24px;
+        font-family: $ghost;
+        margin-bottom: 5%;
+      }
+
+      .cf_close {
+        display: flex;
+        color: $summit-white;
+        font-size: 24px;
+        line-height: 1;
+      }
     }
 
     input,
     textarea {
       outline: none;
       background-color: black;
-      font-size: 1.6vh;
+      font-family: $everett-regular;
+      font-size: 14px;
       height: 12%;
       color: $summit-white;
     }
 
     input {
-      border-top: 0.5px solid $summit-white;
+      border-top: 0.5px solid $sterling-silver;
+      max-height: 40px;
     }
 
     .input_last {
-      border-bottom: 0.5px solid $summit-white;
+      border-bottom: 0.5px solid $sterling-silver;
       margin-bottom: 1%;
+      max-height: 40px;
     }
 
     textarea {
@@ -159,26 +187,20 @@
       color: $summit-white;
       width: 100%;
       height: 60%;
-
-      border-bottom: 0.5px solid $summit-white;
-    }
-
-    .send {
-      color: $summit-white;
-      font-size: 18px;
+      border-bottom: 0.5px solid $sterling-silver;
+      padding-top: 3%;
     }
 
     .cf_footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 5%;
+      padding-top: 2%;
 
       .cf_send {
         color: $summit-white;
         font-family: $ghost;
-        font-weight: 400;
-        font-size: 2.2vh;
+        font-size: 24px;
         background-color: $jet-black;
       }
 
