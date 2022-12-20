@@ -142,7 +142,7 @@
 
         .description_title {
           font-family: "everett-regular";
-          font-size: 28px;
+          font-size: $font-m-mobile;
           color: $jet-black;
           width: 50%;
         }
@@ -172,7 +172,7 @@
 
         .description_text {
           width: 100%;
-          font-size: 19px;
+          font-size: $font-s-mobile;
           margin: 0;
           padding: 0;
         }

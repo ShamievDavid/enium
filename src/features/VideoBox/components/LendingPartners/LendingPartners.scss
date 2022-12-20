@@ -102,10 +102,9 @@
   .lending_infobox {
     display: flex;
     width: 70%;
-    height: 100%;
     font-family: $ghost;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     font-size: $font-p;
     color: $summit-white;
     padding: 5%;
@@ -246,7 +245,7 @@
     .lending_footer {
       background-image: none;
       width: 100vw;
-      padding: 10% 0 0 0;
+      padding: 12% 0 0 0;
 
       .lending_footer_left {
         display: none;
