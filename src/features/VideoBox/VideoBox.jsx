@@ -17,7 +17,7 @@ export const VideoBox = ({
 
   return (
     <div className={collapsed ? "video_container_active" : "video_container"}>
-      <div className="video_left_side" onClick={onCollapse}>
+      <div className="video_bookmark" onClick={onCollapse}>
         <div className="arrow-rigth">←</div>
         <div className="learn_more">LEARN MORE</div>
       </div>
@@ -25,7 +25,8 @@ export const VideoBox = ({
         <div className="upper_text">
           Enium is dedicated to continually enhancing our service offerings in
           order to achieve the highest level of satisfaction for all our
-          customers. We do this by:
+          customers.
+          <br /> We do this by:
         </div>
         <div className="items_box">
           <div className="item_lending">
