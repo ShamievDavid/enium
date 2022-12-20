@@ -4,7 +4,8 @@
 .video_container_active {
   display: flex;
   width: 54%;
-  height: 100%;
+  min-height: 100vh;
+
   position: absolute;
   right: 0;
   box-sizing: border-box;
@@ -241,7 +242,7 @@
   }
 
   .video_container_active {
-    top: -10%;
+    top: -8%;
     width: 100%;
     transition: top 1s ease-out;
 
