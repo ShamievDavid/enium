@@ -27,7 +27,7 @@ html {
 body {
   font-size: 30px;
   margin: 0;
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
 }
 
 code {

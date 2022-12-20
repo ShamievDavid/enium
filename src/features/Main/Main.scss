@@ -2,6 +2,7 @@
 .container_main_blur {
   width: 100vw;
   height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
 }
 
@@ -13,5 +14,6 @@
   .container_main,
   .container_main_blur {
     margin: 0;
+    min-height: -webkit-fill-available;
   }
 }
