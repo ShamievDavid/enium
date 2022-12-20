@@ -6,8 +6,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   width: 50%;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
   padding: 2%;
   background-color: $summit-white;
   z-index: 2;
