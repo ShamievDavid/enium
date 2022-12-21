@@ -9,6 +9,7 @@
   z-index: $homeowners-z;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   .dealers_header {
     display: flex;
@@ -199,6 +200,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 0;
+      width: 100%;
 
       .dealers_content_left {
         width: 100%;
@@ -261,13 +263,13 @@
         }
 
         .dealers_footer_content {
-          width: 100%;
+          width: 90%;
           display: flex;
           flex-direction: column;
-          padding: 0 5% 5% 5%;
+          padding: 0 0 5% 5%;
 
           .dealers_footer_content_item {
-            width: 90%;
+            width: 100%;
             border-right: none;
             font-size: 18px;
             border-top: 1px solid $charlice;
@@ -276,7 +278,7 @@
           }
 
           .dealers_footer_content_item_last {
-            width: 90%;
+            width: 100%;
             font-size: 18px;
             border-top: 1px solid $charlice;
             margin-bottom: 0;
