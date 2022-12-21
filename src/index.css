@@ -21,9 +21,11 @@
   font-style: normal;
 }
 
+html,
 body {
   font-size: 30px;
   margin: 0;
+  height: 100%;
 }
 
 code {

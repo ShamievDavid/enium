@@ -109,7 +109,9 @@
         display: flex;
         justify-content: space-between;
         letter-spacing: 0.05em;
-        margin-top: 20%;
+        margin-top: 0;
+        position: fixed;
+        bottom: 10px;
 
         .nav-link {
           font-size: 10px;
