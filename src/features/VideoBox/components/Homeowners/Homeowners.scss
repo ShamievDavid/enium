@@ -103,7 +103,6 @@
     background-size: 100% 100%;
     display: flex;
     width: 100%;
-    height: 55vh;
 
     .homeowners_images_right {
       width: 30%;
@@ -202,7 +201,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 90%;
+      width: 100%;
       padding: 0;
 
       .homeowners_content_right {
@@ -213,6 +212,7 @@
         .homeowners_title {
           font-family: $everett-regular;
           font-size: 24px;
+          color: $jet-black;
         }
       }
 
@@ -231,9 +231,7 @@
     }
 
     .homeowners_footer {
-      display: flex;
-      flex-direction: column;
-      width: 90vw;
+      width: 100vw;
       background-image: none;
       padding: 10% 0 0 0;
 
