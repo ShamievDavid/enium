@@ -168,11 +168,11 @@
       justify-content: space-around;
       width: 90%;
       height: 100%;
-      padding: 10% 5% 5% 5%;
+      padding: 15% 5% 5% 5%;
 
       .upper_text {
         font-family: "ghost-regular";
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.3;
         width: 100%;
         padding: 0;
@@ -186,8 +186,7 @@
         justify-content: center;
         flex-wrap: nowrap;
         margin: 0;
-        padding: 0;
-        bottom: 0;
+        padding: 20% 0 0 0;
 
         .item_lending,
         .item_homeowners,
