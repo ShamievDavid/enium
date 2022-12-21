@@ -147,7 +147,7 @@
       .arrow-rigth {
         display: flex;
         justify-content: center;
-        font-size: 14px;
+        font-size: 16px;
         font-family: "everett-medium";
         transform: rotate(-90deg);
         height: auto;
@@ -217,6 +217,7 @@
           .paragraph_homeowners {
             font-family: "ghost-regular";
             font-size: 18px;
+            line-height: 1.2;
             margin: 0;
             padding-bottom: 2%;
           }
@@ -257,7 +258,7 @@
     .video_bookmark {
       .arrow-rigth {
         transform: rotate(90deg);
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 6%;
       }
     }
