@@ -164,16 +164,12 @@
     overflow: scroll;
     width: 100%;
 
-    .lending_bg {
-      display: none;
-    }
-
     .lending_header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 5% 5% 5%;
-      margin-bottom: 155%;
+      margin-bottom: 75%;
 
       .lending_header_right {
         width: 100%;

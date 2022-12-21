@@ -140,15 +140,20 @@
 @media (max-width: 600px) {
   .dealers_container,
   .dealers_container_blur {
-    overflow: scroll;
+    position: absolute;
+    background-color: $summit-white;
+    z-index: $homeowners-z;
+    display: flex;
     padding: 0;
+    overflow: scroll;
+    width: 100%;
 
     .dealers_header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 5% 5% 5%;
-      margin-bottom: 115%;
+      padding: 0 5% 0 5%;
+      margin-bottom: 76%;
 
       .dealers_header_left {
         width: 100%;
@@ -222,7 +227,7 @@
     .dealers_bottom {
       background-image: none;
       width: 100vw;
-      padding: 10% 0 0 0;
+      padding: 0;
 
       .dealers_bottom_left {
         display: none;
@@ -239,7 +244,7 @@
         color: $summit-white;
         font-size: $font-p;
         line-height: 1.2;
-        padding: 0;
+        padding: 0 0 20% 0;
         margin: 0;
 
         .dealers_footer_title {
@@ -266,7 +271,7 @@
             font-size: 18px;
             border-top: 1px solid $charlice;
             margin-bottom: 0;
-            padding: 3% 0 10% 0;
+            padding: 0 0 10% 0;
           }
 
           .dealers_footer_content_item_last {
@@ -274,7 +279,7 @@
             font-size: 18px;
             border-top: 1px solid $charlice;
             margin-bottom: 0;
-            padding: 3% 0 25% 0;
+            padding: 3% 0 0 0;
           }
         }
       }
