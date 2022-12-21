@@ -233,7 +233,7 @@
     .homeowners_footer {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 100vw;
       background-image: none;
       padding: 10% 0 0 0;
 
@@ -242,7 +242,7 @@
       }
 
       .homeowners_images_box {
-        width: 100%;
+        width: 90%;
         padding: 5% 5% 30% 0;
         display: flex;
         flex-direction: column;
@@ -260,7 +260,7 @@
           padding: 5%;
 
           .homeowners_img {
-            width: 90%;
+            width: 100%;
             height: auto;
             padding: 18% 0 10% 0;
           }
