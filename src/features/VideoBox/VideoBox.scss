@@ -141,13 +141,13 @@
       justify-content: space-between;
       align-items: center;
       height: 5%;
-      width: 90%;
-      padding: 0 5% 0 5%;
+      width: 91%;
+      padding: 0 5% 0 4%;
 
       .arrow-rigth {
         display: flex;
         justify-content: center;
-        font-size: $font-m-mobile;
+        font-size: 14px;
         font-family: "everett-medium";
         transform: rotate(-90deg);
         height: auto;
@@ -155,7 +155,7 @@
       }
 
       .learn_more {
-        font-size: $font-s-mobile;
+        font-size: 12px;
         writing-mode: horizontal-tb;
         transform: rotate(0deg);
         font-family: "everett-medium";
@@ -257,7 +257,7 @@
     .video_bookmark {
       .arrow-rigth {
         transform: rotate(90deg);
-        font-size: 12px;
+        font-size: 14px;
         padding-bottom: 6%;
       }
     }

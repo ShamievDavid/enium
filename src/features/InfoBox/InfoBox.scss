@@ -115,13 +115,13 @@
         bottom: 10px;
 
         .nav-link {
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .nav-contact {
           color: $charlice;
           cursor: pointer;
-          font-size: 10px;
+          font-size: 12px;
         }
       }
     }
@@ -131,9 +131,9 @@
       position: absolute;
       flex-direction: column;
       justify-content: space-between;
-      height: 36%;
+      height: 40%;
       width: 92%;
-      top: 53%;
+      bottom: 6%;
       left: 0;
       padding: 4vw;
 
@@ -145,7 +145,7 @@
 
         .description_title {
           font-family: "everett-regular";
-          font-size: $font-m-mobile;
+          font-size: 24px;
           color: $jet-black;
           width: 50%;
         }
@@ -174,7 +174,7 @@
 
         .description_text {
           width: 100%;
-          font-size: 16px;
+          font-size: 18px;
           margin: 0;
           padding: 0;
         }
