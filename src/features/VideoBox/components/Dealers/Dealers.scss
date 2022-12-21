@@ -82,6 +82,7 @@
       }
     }
   }
+
   .dealers_bottom {
     background-image: url("../../../../../public/assets/images/dealers_bg.jpg");
     background-repeat: no-repeat;
@@ -152,8 +153,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 5% 0 5%;
-      margin-bottom: 76%;
+      padding: 0 5% 5% 5%;
+      margin-bottom: 70%;
 
       .dealers_header_left {
         width: 100%;
@@ -220,13 +221,13 @@
           font-size: 22px;
           line-height: 1.2;
           color: $jet-black;
-          padding: 5%;
+          padding: 5% 5% 20% 5%;
         }
       }
     }
     .dealers_bottom {
       background-image: none;
-      width: 100vw;
+      width: 100%;
       padding: 0;
 
       .dealers_bottom_left {
@@ -244,7 +245,7 @@
         color: $summit-white;
         font-size: $font-p;
         line-height: 1.2;
-        padding: 0 0 20% 0;
+        padding: 25% 0 0 0;
         margin: 0;
 
         .dealers_footer_title {
@@ -255,7 +256,7 @@
           border-bottom: none;
           display: flex;
           justify-content: center;
-          margin: 30% 0 0 0;
+          margin: 0;
           padding: 0 5% 5% 5%;
         }
 
