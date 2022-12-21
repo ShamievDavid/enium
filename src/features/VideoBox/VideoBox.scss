@@ -185,7 +185,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         margin: 0;
-        padding: 10% 0 0 0;
+        padding: 5% 0 0 0;
 
         .item_lending,
         .item_homeowners,
@@ -203,9 +203,9 @@
 
           .item_title {
             font-family: "everett-regular";
-            font-size: 14px;
+            font-size: 15px;
             line-height: 1;
-            padding-bottom: 3%;
+            padding-bottom: 2%;
           }
 
           .paragraph_homeowners {
@@ -215,7 +215,7 @@
           p,
           .paragraph_homeowners {
             font-family: "ghost-regular";
-            font-size: 14px;
+            font-size: 15px;
             margin: 0;
             padding-bottom: 2%;
           }
@@ -223,7 +223,7 @@
           .item_learn_more {
             color: $summit-white;
             font-family: "everett-regular";
-            font-size: 8px;
+            font-size: 10px;
             cursor: pointer;
             line-height: 1;
           }
