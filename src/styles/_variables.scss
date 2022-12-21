@@ -22,8 +22,9 @@ $font-m: calc(10px + 18 * ((100vw - 520px) / 1920));
 $font-l: calc(20px + 14 * ((100vw - 520px) / 1920));
 $font-p: calc(8px + 14 * ((100vw - 520px) / 1920));
 
-$font-s-mobile: calc(16px + 4 * ((100vw -320px) / 800));
-$font-m-mobile: calc(24px + 4 * ((100vw -320px) / 800));
+$font-s-mobile: calc(10px + 4 * ((100vw - 375px) / 600));
+$font-m-mobile: calc(14px + 4 * ((100vw - 375px) / 600));
+$font-l-mobile: calc(18px + 6 * ((100vw - 375px) / 600));
 
 //z-indexes
 $homeowners-z: 1001;
