@@ -25,7 +25,7 @@
       justify-content: space-between;
       letter-spacing: 0.05em;
       align-items: center;
-      min-width: 60%;
+      min-width: 50%;
       font-size: $font-s;
       cursor: pointer;
 
@@ -41,7 +41,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 33%;
-    background-color: aquamarine;
 
     .info_footer_header {
       display: flex;
@@ -51,18 +50,15 @@
         font-family: "everett-regular";
         font-size: $font-m;
         color: black;
-        // line-height: 1;
       }
 
       .infobox_img_container {
-        width: 40%;
-        // align-content: center;
+        width: 50%;
 
         .logo {
           position: relative;
           width: 8%;
           height: auto;
-          background-color: rgb(154, 205, 249);
         }
       }
     }
@@ -78,11 +74,11 @@
       width: 100%;
 
       .empty_block {
-        width: 40%;
+        width: 50%;
       }
 
       .description_text {
-        width: 60%;
+        width: 50%;
       }
     }
   }
