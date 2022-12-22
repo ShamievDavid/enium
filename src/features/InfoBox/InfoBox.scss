@@ -133,6 +133,7 @@
 
       .info_footer_header {
         display: flex;
+        flex-direction: row-reverse;
         width: 100%;
 
         .description_title {
@@ -142,13 +143,15 @@
         }
 
         .infobox_img_container {
-          display: none;
-          width: 50%;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
 
           .logo {
             position: relative;
             width: 8%;
             height: auto;
+            left: 0;
           }
         }
       }
