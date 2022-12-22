@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $mobile-version) {
   .video_container,
   .video_container_active {
     display: flex;

@@ -1,3 +1,5 @@
+@import "./src/styles/variables.scss";
+
 .joint {
   width: 50%;
   display: flex;
@@ -14,7 +16,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $mobile-version) {
   .joint {
     display: none;
   }
