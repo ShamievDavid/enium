@@ -10,11 +10,12 @@ export const ContactUs = ({ setShowForm, showForm }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    console.log("sendEmail triggers");
     e.preventDefault();
     console.log("form current", form.current);
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
-      (result) => {
+      () => {
         setSentMessage(true);
         setLoading(false);
       },
@@ -25,6 +26,7 @@ export const ContactUs = ({ setShowForm, showForm }) => {
   };
 
   const sending = () => {
+    console.log("send button works");
     setLoading(true);
   };
 
@@ -76,9 +78,9 @@ export const ContactUs = ({ setShowForm, showForm }) => {
       />
       <textarea name="message" placeholder="Your message" />
       <div className="cf_footer">
-        <div type="submit" className="cf_send" onClick={sending}>
+        <button type="submit" className="cf_send" onClick={sending}>
           Send
-        </div>
+        </button>
         <img
           className={loading ? "cf_logo_sending" : "cf_logo"}
           src="./assets/images/enium_s.png"
