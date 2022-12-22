@@ -17,10 +17,10 @@ $everett-medium: "everett-medium";
 $ghost: "ghost-regular";
 
 //font-sizes:
-$font-s: calc(8px + 4 * ((100vw -520px) / 1920));
-$font-m: calc(14px + 14 * ((100vw - 520px) / 1920));
-$font-l: calc(24px + 10 * ((100vw - 520px) / 1920));
-$font-p: calc(12px + 12 * ((100vw - 520px) / 1920));
+$font-s: calc(6px + 6 * ((100vw -520px) / 1920));
+$font-m: calc(12px + 16 * ((100vw - 520px) / 1920));
+$font-l: calc(20px + 14 * ((100vw - 520px) / 1920));
+$font-p: calc(10px + 14 * ((100vw - 520px) / 1920));
 
 $font-s-mobile: calc(10px + 4 * ((100vw - 375px) / 600));
 $font-m-mobile: calc(14px + 4 * ((100vw - 375px) / 600));
@@ -31,4 +31,4 @@ $homeowners-z: 1001;
 
 //media
 
-$mobile-version: 800px;
+$mobile-version: 600px;

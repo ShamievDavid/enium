@@ -84,6 +84,98 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 50%;
+    height: 100vh;
+    padding: 2%;
+    background-color: $summit-white;
+    z-index: 2;
+
+    .navigation {
+      display: flex;
+      width: 100%;
+
+      .logotype {
+        width: 40%;
+      }
+
+      .nav-menu {
+        font-family: "everett-medium";
+        display: flex;
+        justify-content: flex-end;
+        letter-spacing: 0.05em;
+        align-items: center;
+        min-width: 50%;
+        font-size: $font-s;
+        cursor: pointer;
+
+        .nav-link {
+          display: none;
+        }
+
+        .nav-contact {
+          color: $charlice;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .info_footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 40%;
+
+      .info_footer_header {
+        display: flex;
+        width: 100%;
+
+        .description_title {
+          font-family: "everett-regular";
+          font-size: 18px;
+          color: black;
+        }
+
+        .infobox_img_container {
+          display: none;
+          width: 50%;
+
+          .logo {
+            position: relative;
+            width: 8%;
+            height: auto;
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+        justify-content: space-between;
+        font-family: "ghost-regular";
+        font-size: 18px;
+        line-height: 1.2;
+        color: $charlice;
+        overflow: scroll;
+        width: 100%;
+
+        .empty_block {
+          display: none;
+          width: 50%;
+        }
+
+        .description_text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $mobile-version) {
   .info {
     justify-content: space-between;

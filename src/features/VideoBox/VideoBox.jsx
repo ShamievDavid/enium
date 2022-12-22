@@ -71,11 +71,11 @@ export const VideoBox = ({
           </div>
         </div>
         <div className="video">
-          {/* <img
+          <img
             className="video_img"
             src="./assets/images/video.png"
             alt="video-screen"
-          /> */}
+          />
         </div>
       </div>
     </div>
