@@ -25,7 +25,8 @@ export const VideoBox = ({
         <div className="upper_text">
           Enium is dedicated to continually enhancing our service offerings in
           order to achieve the highest level of satisfaction for all our
-          customers. We do this by:
+          customers.
+          <br /> We do this by:
         </div>
         <div className="items_box">
           <div className="item_lending">
@@ -70,11 +71,11 @@ export const VideoBox = ({
           </div>
         </div>
         <div className="video">
-          <img
+          {/* <img
             className="video_img"
             src="./assets/images/video.png"
             alt="video-screen"
-          />
+          /> */}
         </div>
       </div>
     </div>

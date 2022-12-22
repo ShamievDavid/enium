@@ -34,10 +34,12 @@ export const ContactUs = ({ setShowForm, showForm }) => {
     <div className="contact_us_container" onClick={(e) => e.stopPropagation()}>
       <div className="cf_content_sent">
         <div className="cf_header">
+          <div className="cf_close" onClick={() => setShowForm(!showForm)}>
+            ×
+          </div>
           <div className="cf_title">
             Your message successfully sent! Thank you! Talk to you soon.
           </div>
-          <div className="cf_close">×</div>
         </div>
 
         <div className="cf_footer">
