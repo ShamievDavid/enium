@@ -153,19 +153,21 @@
     .dealers_header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 0 5% 5% 5%;
+      align-items: flex-start;
+      padding: 2% 5% 5% 5%;
       margin-bottom: 70%;
 
       .dealers_header_left {
         width: 100%;
 
         .dealers_logo {
-          margin-top: 10%;
+          margin-top: 6%;
 
           .dealers_img_logo {
             width: 31vw;
             height: auto;
+            margin: 0;
+            padding: 0;
           }
         }
       }

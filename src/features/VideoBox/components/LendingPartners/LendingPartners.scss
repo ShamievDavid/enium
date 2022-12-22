@@ -167,8 +167,9 @@
     .lending_header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 0 5% 5% 5%;
+      align-items: flex-start;
+      margin: 0;
+      padding: 2% 5% 5% 5%;
       margin-bottom: 75%;
 
       .lending_header_right {
@@ -176,11 +177,13 @@
 
         .lending_logo {
           z-index: 1000;
-          margin-top: 10%;
+          margin-top: 6%;
 
           .lending_img_logo {
             width: 31vw;
             height: auto;
+            margin: 0;
+            padding: 0;
           }
         }
       }

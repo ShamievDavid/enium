@@ -157,8 +157,9 @@
     .homeowners_header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 0 5% 5% 5%;
+      align-items: flex-start;
+      padding: 2% 5% 5% 5%;
+      margin: 0;
       margin-bottom: 88%;
 
       .homeowners_header_right {
@@ -166,7 +167,7 @@
 
         .homeowners_logo {
           z-index: 1000;
-          padding-top: 10%;
+          padding-top: 6%;
 
           .homeowners_img_logo {
             width: 31vw;
