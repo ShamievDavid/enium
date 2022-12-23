@@ -1,5 +1,7 @@
 @import "./src/styles/variables.scss";
 
+////// 1920px //////
+
 .video_container,
 .video_container_active {
   display: flex;
@@ -135,7 +137,7 @@
   }
 }
 
-// 1200px!!!!!!!!!
+////// 1200px //////
 
 @media (max-width: 1100px) {
   .video_container,
@@ -273,6 +275,7 @@
     }
   }
 }
+///////// iphone 12, 13, 14 /////////
 
 @media (max-width: $mobile-version) {
   .video_container,
@@ -429,6 +432,165 @@
     }
   }
 }
+////// iphone xr ///////
+
+@media (max-width: 420px) {
+  .video_container,
+  .video_container_active {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: -95%;
+    z-index: 100;
+    transition: top 1s ease-out;
+    padding: 0;
+
+    .video_bookmark {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 5%;
+      width: 91%;
+      padding: 0 5% 0 4%;
+
+      .arrow-rigth {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        font-family: "everett-medium";
+        transform: rotate(-90deg);
+        height: auto;
+        padding-bottom: 5%;
+      }
+
+      .learn_more {
+        font-size: 12px;
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        font-family: "everett-medium";
+        line-height: 1;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      width: 90%;
+      padding: 18% 5% 0 5%;
+      margin: 0;
+
+      .upper_text {
+        font-family: "ghost-regular";
+        font-size: 20px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 4%;
+      }
+
+      .items_box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+        .item_homeowners {
+          order: -1;
+        }
+
+        .item_lending {
+          order: 0;
+        }
+
+        .item_lending,
+        .item_homeowners,
+        .item_dealers {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 8%;
+          padding: 0;
+
+          .item_title {
+            font-family: "everett-regular";
+            font-size: 19px;
+            line-height: 1;
+            padding-bottom: 0;
+          }
+
+          .paragraph_homeowners {
+            padding-right: 0;
+          }
+
+          p,
+          .paragraph_homeowners {
+            font-family: "ghost-regular";
+            font-size: 16px;
+            line-height: 1.2;
+            margin: 0;
+            padding: 4% 0 2% 0;
+          }
+
+          .item_learn_more {
+            color: $summit-white;
+            font-family: "everett-regular";
+            font-size: 12px;
+            cursor: pointer;
+            line-height: 1;
+          }
+        }
+
+        .item_dealers {
+          margin: 0;
+          padding: 0;
+          order: 1;
+        }
+      }
+
+      .video {
+        display: none;
+
+        .video_img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .video_container_active {
+    top: -8%;
+    width: 100%;
+    transition: top 1s ease-out;
+
+    .video {
+      display: none;
+
+      .video_img {
+        display: none;
+      }
+    }
+
+    .video_bookmark {
+      .arrow-rigth {
+        transform: rotate(90deg);
+        font-size: 14px;
+        padding-bottom: 6%;
+      }
+    }
+  }
+}
+
+///////// iphone 7 /////////
 
 @media (max-height: 548px) {
   .video_container,
