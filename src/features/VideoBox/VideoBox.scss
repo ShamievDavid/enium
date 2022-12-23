@@ -82,7 +82,7 @@
 
         p,
         .p_homeowners {
-          padding: 4% 0 2% 0;
+          padding: 6% 0 2% 0;
           margin: 0;
           font-family: "ghost-regular";
           font-size: $font-paragraph;
@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .video_container,
   .video_container_active {
     display: flex;
