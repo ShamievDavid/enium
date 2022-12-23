@@ -169,7 +169,8 @@
     }
   }
 }
-@media (max-width: 1100px) {
+
+@media (max-width: 1320px) {
   .info {
     display: flex;
     flex-direction: column;
@@ -196,7 +197,7 @@
         letter-spacing: 0.05em;
         align-items: center;
         min-width: 50%;
-        font-size: $font-s;
+        font-size: 12px;
         cursor: pointer;
 
         .nav-link {
@@ -215,7 +216,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 40%;
+      height: 36%;
 
       .info_footer_header {
         display: flex;
@@ -224,7 +225,7 @@
 
         .description_title {
           font-family: "everett-regular";
-          font-size: 18px;
+          font-size: 24px;
           color: black;
         }
 
@@ -235,7 +236,7 @@
 
           .logo {
             position: relative;
-            width: 8%;
+            width: 6%;
             height: auto;
             left: 0;
           }
@@ -246,7 +247,7 @@
         display: flex;
         justify-content: space-between;
         font-family: "ghost-regular";
-        font-size: 18px;
+        font-size: 24px;
         line-height: 1.2;
         color: $charlice;
         overflow: scroll;
