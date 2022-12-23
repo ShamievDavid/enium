@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .info {
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@
         letter-spacing: 0.05em;
         align-items: center;
         min-width: 50%;
-        font-size: 11px;
+        font-size: 10px;
         cursor: pointer;
 
         .nav-contact {
