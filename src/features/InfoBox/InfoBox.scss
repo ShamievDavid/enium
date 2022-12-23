@@ -14,9 +14,14 @@
   .navigation {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 
     .logotype {
-      width: 40%;
+      width: 150px;
+      height: 37px;
     }
 
     .nav-menu {
@@ -101,7 +106,8 @@
       width: 100%;
 
       .logotype {
-        width: 40%;
+        width: 150px;
+        height: 37px;
       }
 
       .nav-menu {
@@ -185,6 +191,111 @@
     .navigation {
       display: flex;
       width: 100%;
+
+      .logotype {
+        width: 150px;
+        height: 37px;
+      }
+
+      .nav-menu {
+        font-family: "everett-medium";
+        display: flex;
+        justify-content: flex-end;
+        letter-spacing: 0.05em;
+        align-items: center;
+        min-width: 50%;
+        font-size: 12px;
+        cursor: pointer;
+
+        .nav-link {
+          display: none;
+          cursor: pointer;
+        }
+
+        .nav-contact {
+          color: $charlice;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .info_footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 42%;
+
+      .info_footer_header {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+
+        .description_title {
+          font-family: "everett-regular";
+          font-size: 24px;
+          color: black;
+        }
+
+        .infobox_img_container {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+
+          .logo {
+            position: relative;
+            aspect-ratio: 1;
+            height: auto;
+            left: 0;
+            transform: scale(0.7);
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+        justify-content: space-between;
+        font-family: "ghost-regular";
+        font-size: 24px;
+        line-height: 1.2;
+        color: $charlice;
+        overflow: scroll;
+        width: 100%;
+
+        .empty_block {
+          display: none;
+          width: 50%;
+        }
+
+        .description_text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 50%;
+    height: 100vh;
+    padding: 2%;
+    background-color: $summit-white;
+    z-index: 2;
+
+    .navigation {
+      display: flex;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+
+      .title {
+        padding: 0;
+        margin: 0;
+      }
 
       .logotype {
         width: 40%;
