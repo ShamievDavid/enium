@@ -47,7 +47,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 78%;
+      width: 70%;
 
       .homeowners_contact {
         margin-top: 0.6%;
@@ -98,7 +98,7 @@
   }
 
   .homeowners_footer {
-    background-image: url("../../../../../public/assets/images/homeowners_bg.jpg");
+    background-image: url("../../../../../public/assets/images/enium_homeowners_bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -117,13 +117,13 @@
       .homeowners_content_item {
         display: flex;
         flex-direction: column;
-        padding: 1%;
-        width: 27%;
+        padding: 1% 1% 2% 1%;
+        width: 16vw;
 
         .homeowners_img {
           width: 16vw;
           height: auto;
-          margin-bottom: 8%;
+          margin-bottom: 12%;
         }
 
         .homeowners_infobox {
