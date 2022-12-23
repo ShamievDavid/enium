@@ -26,7 +26,7 @@
       letter-spacing: 0.05em;
       align-items: center;
       min-width: 50%;
-      font-size: $font-s;
+      font-size: $font-small;
       cursor: pointer;
 
       .nav-contact {
@@ -48,7 +48,7 @@
 
       .description_title {
         font-family: "everett-regular";
-        font-size: $font-m;
+        font-size: $font-medium;
         color: black;
       }
 
@@ -67,7 +67,7 @@
       display: flex;
       justify-content: space-between;
       font-family: "ghost-regular";
-      font-size: $font-m;
+      font-size: $font-medium;
       line-height: 1.2;
       color: $charlice;
       overflow: scroll;
