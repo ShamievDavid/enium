@@ -176,7 +176,7 @@
   }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1260px) {
   .info {
     display: flex;
     flex-direction: column;
@@ -204,7 +204,7 @@
         letter-spacing: 0.05em;
         align-items: center;
         min-width: 50%;
-        font-size: 12px;
+        font-size: 11px;
         cursor: pointer;
 
         .nav-link {
@@ -223,7 +223,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 42%;
+      height: 39%;
 
       .info_footer_header {
         display: flex;
@@ -232,7 +232,7 @@
 
         .description_title {
           font-family: "everett-regular";
-          font-size: 24px;
+          font-size: 23px;
           color: black;
         }
 
@@ -255,7 +255,7 @@
         display: flex;
         justify-content: space-between;
         font-family: "ghost-regular";
-        font-size: 24px;
+        font-size: 23px;
         line-height: 1.2;
         color: $charlice;
         overflow: scroll;
