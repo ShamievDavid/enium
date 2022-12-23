@@ -23,9 +23,9 @@ $font-l: calc(20px + 14 * ((100vw - 520px) / 1920));
 $font-p: calc(6px + 16 * ((100vw - 520px) / 1920));
 
 //font-mobile
-$font-s-mobile: calc(10px + 4 * ((100vw - 375px) / 600));
-$font-m-mobile: calc(14px + 4 * ((100vw - 375px) / 600));
-$font-l-mobile: calc(18px + 6 * ((100vw - 375px) / 600));
+$font-s-mobile: calc(10px + 2 * ((100vw - 375px) / 600));
+$font-m-mobile: calc(12px + 2 * ((100vw - 375px) / 600));
+$font-l-mobile: calc(17px + 2 * ((100vw - 375px) / 600));
 
 //font-middle
 $font-s-middle: calc(10px + 4 * ((100vw - 375px) / 1100));
