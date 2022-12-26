@@ -101,7 +101,7 @@ export const Homeowners = ({
               alt="cirlce"
             /> */}
             <div className="homeowners_percent_box">
-              <div className="homeowners_percent_box_number">95%</div>
+              <div className="homeowners_percent_box_number">100%</div>
               <div className="homeowners_percent_box_title">PROFIT</div>
             </div>
             <div className="homeowners_infobox">

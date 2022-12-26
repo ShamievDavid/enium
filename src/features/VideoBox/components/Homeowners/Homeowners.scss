@@ -9,7 +9,6 @@
   z-index: 1001;
   display: flex;
   flex-direction: column;
-  // overflow: scroll;
 
   .homeowners_header {
     display: flex;
@@ -60,7 +59,7 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 10% 2% 2% 2%;
+    padding: 15% 2% 2% 2%;
 
     .homeowners_content_right {
       width: 30%;
@@ -97,6 +96,7 @@
     padding: 2%;
     width: 100%;
     height: 50%;
+    background-color: aqua;
 
     .homeowners_images_right {
       width: 30%;
