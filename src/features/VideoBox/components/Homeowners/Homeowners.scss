@@ -68,7 +68,7 @@
 
       .homeowners_title {
         font-family: $everett-regular;
-        font-size: 3vh;
+        font-size: 3vmin;
         color: $cosmic-black;
       }
     }
@@ -80,7 +80,7 @@
 
       .homeowners_text {
         font-family: $ghost;
-        font-size: 3vh;
+        font-size: 3vmin;
         line-height: 1.2;
         color: $cosmic-black;
       }
@@ -124,12 +124,12 @@
           padding: 0;
 
           .homeowners_percent_box_number {
-            font-size: 72px;
+            font-size: 4vmax;
             line-height: 1;
           }
 
           .homeowners_percent_box_title {
-            font-size: 18px;
+            font-size: 1vmax;
             margin: 2%;
           }
         }
