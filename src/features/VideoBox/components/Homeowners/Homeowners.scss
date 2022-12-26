@@ -408,7 +408,7 @@
 
       .homeowners_images_box {
         width: 100%;
-        padding: 20% 5% 0 5%;
+        padding: 20% 5% 20% 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -416,6 +416,7 @@
         background-image: url("../../../../../public/assets/images/homeowners_bg_mobile.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        bottom: 10px;
 
         .homeowners_content_item {
           display: flex;
