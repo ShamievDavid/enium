@@ -177,7 +177,7 @@
       align-items: flex-start;
       padding: 2% 5% 5% 5%;
       margin: 0;
-      margin-bottom: 88%;
+      margin-bottom: 42%;
 
       .homeowners_header_right {
         width: 100%;
@@ -228,7 +228,7 @@
 
         .homeowners_title {
           font-family: $everett-regular;
-          font-size: 24px;
+          font-size: 4vmax;
           color: $jet-black;
         }
       }
@@ -240,7 +240,7 @@
 
         .homeowners_text {
           font-family: $ghost;
-          font-size: 22px;
+          font-size: 4vmax;
           line-height: 1.3;
           padding: 5%;
         }
@@ -259,7 +259,7 @@
 
       .homeowners_images_box {
         width: 100%;
-        padding: 20% 5% 15% 5%;
+        padding: 20% 5% 0 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -271,24 +271,36 @@
         .homeowners_content_item {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          // align-items: center;
           width: 100%;
-          padding: 5% 0 5% 0;
+          padding: 0 0 20% 0;
 
-          .homeowners_img {
-            width: 80%;
-            height: auto;
-            padding: 0;
+          .homeowners_percent_box {
+            margin: 0 0 5% 0;
+
+            .homeowners_percent_box_number {
+              font-size: 12vmax;
+            }
+            .homeowners_percent_box_title {
+              font-size: 2.6vmax;
+            }
           }
+
+          // .homeowners_img {
+          //   width: 80%;
+          //   height: auto;
+          //   padding: 0;
+          // }
 
           .homeowners_infobox {
             width: 100%;
             font-family: $ghost;
-            font-size: 18px;
+            font-size: 2.4vmax;
             color: $summit-white;
             line-height: 1.3;
-            padding: 5%;
+            // padding: 5%;
             box-sizing: border-box;
+            bottom: 10px;
           }
         }
       }
