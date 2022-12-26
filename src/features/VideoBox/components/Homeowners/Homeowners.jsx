@@ -57,11 +57,16 @@ export const Homeowners = ({
         <div className="homeowners_images_right"></div>
         <div className="homeowners_images_box">
           <div className="homeowners_content_item">
-            <img
+            {/* <img
               className="homeowners_img"
               src="./assets/images/enium_homeowners page_circle_01.png"
               alt="cirlce"
-            />
+            /> */}
+            <div className="homeowners_percent_box">
+              <div className="homeowners_percent_box_number">35%</div>
+              <div className="homeowners_percent_box_title">PEOPLE</div>
+            </div>
+
             <div className="homeowners_infobox">
               • Enable energy self-sufficiency
               <br /> • Increase property values by adding energy efficent
@@ -71,11 +76,15 @@ export const Homeowners = ({
             </div>
           </div>
           <div className="homeowners_content_item">
-            <img
+            {/* <img
               className="homeowners_img"
               src="./assets/images/enium_homeowners pagecircle_02.png"
               alt="cirlce"
-            />
+            /> */}
+            <div className="homeowners_percent_box">
+              <div className="homeowners_percent_box_number">65%</div>
+              <div className="homeowners_percent_box_title">PLANET</div>
+            </div>
             <div className="homeowners_infobox">
               • Limit Carbon Emission with Green Energy
               <br />
@@ -86,11 +95,15 @@ export const Homeowners = ({
             </div>
           </div>
           <div className="homeowners_content_item">
-            <img
+            {/* <img
               className="homeowners_img"
               src="./assets/images/enium_homeowners pagecircle_03.png"
               alt="cirlce"
-            />
+            /> */}
+            <div className="homeowners_percent_box">
+              <div className="homeowners_percent_box_number">95%</div>
+              <div className="homeowners_percent_box_title">PROFIT</div>
+            </div>
             <div className="homeowners_infobox">
               <div className="homeowners_column">
                 • Strong Government Legislation will encourage private sector
