@@ -9,26 +9,14 @@
   z-index: 1001;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-
-  .homeowners_bg {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    bottom: 0;
-
-    .homeowners_bg_img {
-      position: fixed;
-      width: 100%;
-      height: 50%;
-    }
-  }
+  justify-content: space-between;
+  overflow: scroll;
 
   .homeowners_header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 2%;
-    margin-bottom: 18vh;
 
     .homeowners_header_right {
       width: 30%;
@@ -50,35 +38,37 @@
       width: 70%;
 
       .homeowners_contact {
-        margin-top: 0.6%;
         color: $charlice;
-        font-size: $font-s;
+        font-size: 12px;
+        line-height: 1;
+        margin-top: -1%;
         font-family: $everett-medium;
         cursor: pointer;
       }
 
       .homeowner_close {
         color: $jet-black;
-        font-size: $font-l;
+        font-size: 38px;
         font-family: $everett-regular;
         line-height: 1;
+        margin-top: -1%;
         cursor: pointer;
       }
     }
   }
 
   .homeowners_content {
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 10% 2% 2% 2%;
 
     .homeowners_content_right {
       width: 30%;
 
       .homeowners_title {
         font-family: $everett-regular;
-        font-size: $font-l;
+        font-size: 38px;
         color: $jet-black;
       }
     }
@@ -90,7 +80,7 @@
 
       .homeowners_text {
         font-family: $ghost;
-        font-size: $font-l;
+        font-size: 38px;
         line-height: 1.2;
         color: $jet-black;
       }
@@ -101,8 +91,12 @@
     background-image: url("../../../../../public/assets/images/enium_homeowners_bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-color: yellow;
+    box-sizing: border-box;
     display: flex;
+    padding: 2%;
     width: 100%;
+    height: 50%;
 
     .homeowners_images_right {
       width: 30%;
@@ -112,7 +106,7 @@
       width: 70%;
       display: flex;
       justify-content: space-between;
-      padding: 2% 1% 5% 0;
+      padding: 0 1% 5% 0;
 
       .homeowners_content_item {
         display: flex;
@@ -130,7 +124,7 @@
           display: flex;
           justify-content: space-between;
           font-family: $ghost;
-          font-size: $font-p;
+          font-size: 18px;
           color: $summit-white;
           margin-top: 0;
         }
@@ -143,7 +137,7 @@
   filter: blur(0.3rem);
 }
 
-@media (max-width: $mobile-version) {
+@media (max-width: 900px) {
   .homeowners_container,
   .homeowners_container_blur {
     position: absolute;
@@ -234,6 +228,143 @@
       width: 100vw;
       background-image: none;
       padding: 0;
+      height: auto;
+
+      .homeowners_images_right {
+        display: none;
+      }
+
+      .homeowners_images_box {
+        width: 100%;
+        padding: 20% 5% 15% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+        background-image: url("../../../../../public/assets/images/homeowners_bg_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        .homeowners_content_item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 5% 0 5% 0;
+
+          .homeowners_img {
+            width: 80%;
+            height: auto;
+            padding: 0;
+          }
+
+          .homeowners_infobox {
+            width: 100%;
+            font-family: $ghost;
+            font-size: 18px;
+            color: $summit-white;
+            line-height: 1.3;
+            padding: 5%;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .homeowners_container,
+  .homeowners_container_blur {
+    position: absolute;
+    background-color: $summit-white;
+    z-index: $homeowners-z;
+    display: flex;
+    padding: 0;
+    overflow: scroll;
+    width: 100vw;
+
+    .homeowners_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2% 5% 5% 5%;
+      margin: 0;
+      margin-bottom: 88%;
+
+      .homeowners_header_right {
+        width: 100%;
+
+        .homeowners_logo {
+          z-index: 1000;
+          padding-top: 7%;
+
+          .homeowners_img_logo {
+            width: 31vw;
+            height: auto;
+            z-index: 1000;
+            margin: 0;
+          }
+        }
+      }
+
+      .homeowners_header_left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        .homeowners_contact {
+          visibility: hidden;
+        }
+
+        .homeowner_close {
+          padding: 0;
+          font-size: 36px;
+          font-family: $everett-regular;
+          line-height: 1;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .homeowners_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+
+      .homeowners_content_right {
+        margin-bottom: 0;
+        padding: 0 0 0 5%;
+
+        .homeowners_title {
+          font-family: $everett-regular;
+          font-size: 24px;
+          color: $jet-black;
+        }
+      }
+
+      .homeowners_content_left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .homeowners_text {
+          font-family: $ghost;
+          font-size: 22px;
+          line-height: 1.3;
+          padding: 5%;
+        }
+      }
+    }
+
+    .homeowners_footer {
+      width: 100vw;
+      background-image: none;
+      padding: 0;
+      height: auto;
 
       .homeowners_images_right {
         display: none;
