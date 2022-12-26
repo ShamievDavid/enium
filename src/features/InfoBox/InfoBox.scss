@@ -325,7 +325,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 46%;
+      height: auto;
 
       .info_footer_header {
         display: flex;
@@ -653,7 +653,6 @@
       .description {
         line-height: 1.2;
         width: 100%;
-        overflow: scroll;
 
         .empty_block {
           display: none;
@@ -752,7 +751,6 @@
       .description {
         line-height: 1.2;
         width: 100%;
-        overflow: scroll;
 
         .empty_block {
           display: none;
