@@ -9,13 +9,14 @@
   z-index: 1001;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   .homeowners_header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 2%;
-    margin-bottom: 10%;
+    box-sizing: border-box;
 
     .homeowners_header_right {
       width: 30%;
@@ -57,14 +58,15 @@
   }
 
   .homeowners_content {
+    box-sizing: border-box;
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 15% 2% 2% 2%;
+    padding: 12% 2% 2% 2%;
     position: relative;
-    margin-bottom: 0;
 
     .homeowners_content_right {
+      display: flex;
       width: 30%;
 
       .homeowners_title {
