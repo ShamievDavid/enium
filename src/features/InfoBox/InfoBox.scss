@@ -382,6 +382,7 @@
     width: 100%;
     height: auto;
     padding: 5%;
+    margin-top: 4vh;
 
     .navigation {
       flex-direction: column;
@@ -389,7 +390,6 @@
       width: 100%;
       height: 100%;
       background-color: $summit-white;
-      margin-top: 2.5%;
 
       .logotype {
         width: 100%;
