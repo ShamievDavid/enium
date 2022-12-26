@@ -409,13 +409,28 @@
           flex-direction: column;
           align-items: center;
           width: 100%;
-          padding: 5% 0 5% 0;
+          padding: 5% 0 20% 0;
 
-          .homeowners_img {
-            width: 80%;
-            height: auto;
+          .homeowners_percent_box {
+            width: 90%;
             padding: 0;
+            margin: 0 0 6% 0;
+
+            .homeowners_percent_box_number {
+              font-size: 72px;
+              margin: 0 2% 0 -5%;
+            }
+
+            .homeowners_percent_box_title {
+              font-size: 20px;
+            }
           }
+
+          // .homeowners_img {
+          //   width: 80%;
+          //   height: auto;
+          //   padding: 0;
+          // }
 
           .homeowners_infobox {
             width: 100%;
@@ -423,7 +438,7 @@
             font-size: 18px;
             color: $summit-white;
             line-height: 1.3;
-            padding: 5%;
+            margin-left: -8%;
             box-sizing: border-box;
           }
         }
