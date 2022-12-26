@@ -375,7 +375,7 @@
   }
 }
 
-@media (max-width: $mobile-version) {
+@media (max-width: 800px) {
   .info {
     justify-content: space-between;
     flex-direction: column;
@@ -392,6 +392,7 @@
 
       .logotype {
         width: 100%;
+        height: auto;
       }
 
       .nav-menu {
@@ -406,7 +407,7 @@
 
         .nav-link {
           display: flex;
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .nav-contact {
@@ -422,7 +423,7 @@
       position: absolute;
       flex-direction: column;
       justify-content: space-between;
-      height: 50%;
+      height: auto;
       width: 92%;
       bottom: 6%;
       left: 0;
@@ -490,6 +491,7 @@
 
       .logotype {
         width: 100%;
+        height: auto;
       }
 
       .nav-menu {
