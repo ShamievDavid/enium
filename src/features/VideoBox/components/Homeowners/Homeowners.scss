@@ -407,7 +407,7 @@
 
       .homeowners_images_box {
         width: 100%;
-        padding: 20% 5% 20% 5%;
+        padding: 20% 5% 0 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -452,6 +452,7 @@
             line-height: 1.3;
             margin-left: -8%;
             box-sizing: border-box;
+            padding-left: 5%;
             padding-bottom: 0;
             bottom: 10px;
           }
