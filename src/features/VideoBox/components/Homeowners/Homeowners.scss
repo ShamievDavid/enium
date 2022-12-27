@@ -495,7 +495,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 2% 5% 5% 5%;
+      padding: 5% 5% 5% 5%;
       margin: 0;
       margin-bottom: 88%;
 
@@ -504,7 +504,7 @@
 
         .homeowners_logo {
           z-index: 1000;
-          padding-top: 7%;
+          // padding-top: 7%;
 
           .homeowners_img_logo {
             width: 31vw;
@@ -531,6 +531,7 @@
           font-family: $everett-regular;
           line-height: 1;
           cursor: pointer;
+          margin-top: -12px;
         }
       }
     }
