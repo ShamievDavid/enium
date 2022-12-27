@@ -39,7 +39,6 @@ export const Homeowners = ({
           </div>
         </div>
       </div>
-      <div className="homeowners_empty" />
       <div className="homeowners_content">
         <div className="homeowners_content_right">
           <div className="homeowners_title">HOMEOWNERS</div>
