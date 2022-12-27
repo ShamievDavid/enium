@@ -32,12 +32,14 @@ function App() {
         setDealers={setDealers}
       />
       {showForm && <ContactUs showForm={showForm} setShowForm={setShowForm} />}
-      <Homeowners
-        homeowners={homeowners}
-        setHomeowners={setHomeowners}
-        showForm={showForm}
-        setShowForm={setShowForm}
-      />
+      {homeowners && (
+        <Homeowners
+          homeowners={homeowners}
+          setHomeowners={setHomeowners}
+          showForm={showForm}
+          setShowForm={setShowForm}
+        />
+      )}
       {lendingPartners && (
         <LendingPartners
           lendingPartners={lendingPartners}

@@ -66,16 +66,16 @@ export const LendingPartners = ({
               <div className="lending_item_number">2</div>
               <div className="lending_item_line"></div>
             </div>
-            <div className="lending_item_text">Vetted dealers.</div>
+            <div className="lending_item_text">
+              Simple plug and play solution to enable lending partners to easily
+              expand into the renewable energy lending sector.
+            </div>
           </div>
           <div className="lending_infobox_items">
             <div className="lending_item_header">
               <div className="lending_item_number">3</div>
             </div>
-            <div className="lending_item_text_last">
-              Simple plug and play solution to enable lending partners to easily
-              expand into the renewable energy lending sector.
-            </div>
+            <div className="lending_item_text_last">Vetted dealers.</div>
           </div>
         </div>
       </div>

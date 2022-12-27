@@ -14,8 +14,9 @@
   .lending_header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 2%;
-    margin-bottom: 13vh;
+    box-sizing: border-box;
 
     .lending_header_right {
       width: 30%;
@@ -24,7 +25,7 @@
         z-index: 1000;
 
         .lending_img_logo {
-          width: 10vw;
+          width: 210px;
           height: auto;
         }
       }
@@ -37,18 +38,20 @@
       width: 70%;
 
       .lending_contact {
-        margin-top: 0.6%;
         color: $charlice;
-        font-size: $font-s;
+        line-height: 1;
+        margin-top: -11px;
+        font-size: 12px;
         font-family: $everett-medium;
         cursor: pointer;
       }
 
       .lending_close {
-        color: $jet-black;
-        font-size: $font-l;
+        color: $cosmic-black;
+        font-size: 34px;
         font-family: $everett-regular;
         line-height: 1;
+        margin-top: -12px;
         cursor: pointer;
       }
     }
@@ -58,14 +61,16 @@
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    position: fixed;
+    bottom: 50%;
 
     .lending_content_right {
       width: 30%;
 
       .lending_title {
         font-family: $everett-regular;
-        font-size: $font-l;
-        color: $jet-black;
+        font-size: 28px;
+        color: $cosmic-black;
       }
     }
 
@@ -76,84 +81,248 @@
 
       .lending_text {
         font-family: $ghost;
-        font-size: $font-l;
+        font-size: 28px;
         line-height: 1.2;
-        color: $jet-black;
+        color: $cosmic-black;
       }
     }
   }
-}
 
-.lending_footer {
-  background-image: url("../../../../../public/assets/images/enium_lending_partners_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-
-  .lending_footer_left {
-    width: 30%;
-  }
-
-  .lending_infobox {
+  .lending_footer {
+    background-image: url("../../../../../public/assets/images/enium_lending_partners_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
     display: flex;
-    width: 70%;
-    font-family: $ghost;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: $font-p;
-    color: $summit-white;
-    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    bottom: 0;
 
-    .lending_infobox_items {
+    .lending_footer_left {
+      width: 30%;
+    }
+
+    .lending_infobox {
       display: flex;
-      flex-direction: column;
-      width: 33%;
+      width: 70%;
+      font-family: $ghost;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 24px;
+      color: $summit-white;
 
-      .lending_item_header {
+      .lending_infobox_items {
         display: flex;
-        align-items: center;
-        margin-bottom: 2%;
-      }
+        flex-direction: column;
+        width: 33%;
 
-      .lending_item_number {
-        font-family: $everett-medium;
-        font-size: $font-m;
-      }
+        .lending_item_header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8%;
+        }
 
-      .lending_item_line {
-        margin-left: 5%;
-        margin-right: 5%;
-        height: 1px;
-        background: $summit-white;
-        width: 90%;
-      }
+        .lending_item_number {
+          font-family: $everett-medium;
+          font-size: 72px;
+        }
 
-      .lending_item_line_third {
-        display: none;
-      }
+        // .lending_item_line {
+        //   margin-left: 5%;
+        //   margin-right: 5%;
+        //   height: 1px;
+        //   background: $summit-white;
+        //   width: 90%;
+        // }
 
-      .lending_item_text,
-      .lending_item_text_last {
-        font-family: $ghost;
-        font-size: $font-p;
-        line-height: 1.3;
-        color: $summit-white;
-        width: 50%;
-      }
+        // .lending_item_line_third {
+        //   display: none;
+        // }
 
-      .lending_item_text_last {
-        width: 100%;
+        .lending_item_text,
+        .lending_item_text_last {
+          font-family: $ghost;
+          font-size: 24px;
+          line-height: 1.3;
+          color: $summit-white;
+          width: 80%;
+        }
+
+        .lending_item_text_last {
+          width: 100%;
+        }
       }
     }
   }
 }
 
-@media (max-width: $mobile-version) {
+@media (max-width: 1200px) {
+  .lending_container,
+  .lending_container_blur {
+    position: absolute;
+    background-color: $summit-white;
+    width: 100vw;
+    height: 100vh;
+    z-index: $homeowners-z;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .lending_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2%;
+      box-sizing: border-box;
+
+      .lending_header_right {
+        width: 30%;
+
+        .lending_logo {
+          z-index: 1000;
+
+          .lending_img_logo {
+            width: 210px;
+            height: auto;
+          }
+        }
+      }
+
+      .lending_header_left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+
+        .lending_contact {
+          color: $charlice;
+          line-height: 1;
+          margin-top: -11px;
+          font-size: 12px;
+          font-family: $everett-medium;
+          cursor: pointer;
+        }
+
+        .lending_close {
+          color: $cosmic-black;
+          font-size: 34px;
+          font-family: $everett-regular;
+          line-height: 1;
+          margin-top: -12px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .lending_content {
+      display: flex;
+      justify-content: space-between;
+      padding: 2%;
+      position: fixed;
+      bottom: 50%;
+
+      .lending_content_right {
+        width: 30%;
+
+        .lending_title {
+          font-family: $everett-regular;
+          font-size: 24px;
+          color: $cosmic-black;
+        }
+      }
+
+      .lending_content_left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        .lending_text {
+          font-family: $ghost;
+          font-size: 24px;
+          line-height: 1.2;
+          color: $cosmic-black;
+        }
+      }
+    }
+
+    .lending_footer {
+      background-image: url("../../../../../public/assets/images/enium_lending_partners_bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2%;
+      width: 100%;
+      height: 50%;
+      position: fixed;
+      bottom: 0;
+
+      .lending_footer_left {
+        width: 30%;
+      }
+
+      .lending_infobox {
+        display: flex;
+        width: 70%;
+        font-family: $ghost;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 24px;
+        color: $summit-white;
+
+        .lending_infobox_items {
+          display: flex;
+          flex-direction: column;
+          width: 33%;
+
+          .lending_item_header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8%;
+          }
+
+          .lending_item_number {
+            font-family: $everett-medium;
+            font-size: 64px;
+          }
+
+          // .lending_item_line {
+          //   margin-left: 5%;
+          //   margin-right: 5%;
+          //   height: 1px;
+          //   background: $summit-white;
+          //   width: 90%;
+          // }
+
+          // .lending_item_line_third {
+          //   display: none;
+          // }
+
+          .lending_item_text,
+          .lending_item_text_last {
+            font-family: $ghost;
+            font-size: 20px;
+            line-height: 1.3;
+            color: $summit-white;
+            width: 80%;
+          }
+
+          .lending_item_text_last {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
   .lending_container,
   .lending_container_blur {
     position: absolute;
@@ -162,23 +331,20 @@
     display: flex;
     padding: 0;
     overflow: scroll;
-    width: 100%;
+    width: 100vw;
 
     .lending_header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       margin: 0;
-      padding: 2% 5% 5% 5%;
-      margin-bottom: 75%;
+      padding: 5%;
+      margin-bottom: 73%;
 
       .lending_header_right {
         width: 100%;
 
         .lending_logo {
-          z-index: 1000;
-          margin-top: 7%;
-
           .lending_img_logo {
             width: 31vw;
             height: auto;
@@ -204,6 +370,7 @@
           font-family: $everett-regular;
           line-height: 1;
           cursor: pointer;
+          margin-top: -12px;
         }
       }
     }
@@ -214,12 +381,13 @@
       justify-content: space-between;
       padding: 0;
       width: 100%;
+      position: static;
 
       .lending_content_right {
         width: 100%;
 
         .lending_title {
-          padding: 0 5% 2% 5%;
+          padding: 0 5%;
           font-family: $everett-regular;
           font-size: 24px;
           color: $jet-black;
@@ -242,7 +410,8 @@
     }
 
     .lending_footer {
-      background-image: none;
+      position: static;
+      height: auto;
       width: 100vw;
       padding: 0;
       background-image: url("../../../../../public/assets/images/lending_partners_bg_mobile.jpg");
@@ -257,7 +426,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 31% 5% 30% 5%;
+        padding: 25% 5%;
         justify-content: flex-start;
         font-family: $ghost;
         font-size: $font-p;
@@ -276,37 +445,21 @@
 
         .lending_infobox_items {
           display: flex;
-          flex-direction: row;
           align-items: flex-start;
           width: 100%;
-          padding: 0;
+          padding: 0 0 25% 0;
           margin: 0;
 
           .lending_item_header {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-right: 5%;
           }
 
           .lending_item_number {
-            font-family: $everett-medium;
-            font-size: 22px;
+            font-family: $everett-regular;
+            font-size: 72px;
             line-height: 1;
-          }
-
-          .lending_item_line {
-            margin-left: 6px;
-            margin-right: 0;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background: $summit-white;
-            width: 1px;
-            height: 100px;
-          }
-
-          .lending_item_line_third {
-            display: none;
           }
 
           .lending_item_text,
@@ -316,7 +469,6 @@
             line-height: 1.3;
             color: $summit-white;
             width: 100%;
-            margin-left: 2vw;
           }
 
           .lending_item_text_last {

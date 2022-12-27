@@ -40,7 +40,7 @@
         color: $charlice;
         font-size: 12px;
         line-height: 1;
-        margin-top: -1%;
+        margin-top: -13px;
         font-family: $everett-medium;
         cursor: pointer;
       }
@@ -56,18 +56,12 @@
     }
   }
 
-  .homeowners_empty {
-    background-color: aquamarine;
-    width: 100%;
-    height: autos;
-  }
-
   .homeowners_content {
     box-sizing: border-box;
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 2% 2% 2% 2%;
+    padding: 2%;
     position: fixed;
     bottom: 50%;
 
@@ -108,7 +102,6 @@
     width: 100%;
     height: 50%;
     position: fixed;
-    right: 0;
     bottom: 0;
 
     .homeowners_images_right {
@@ -495,7 +488,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 5% 5% 5% 5%;
+      padding: 5%;
       margin: 0;
       margin-bottom: 88%;
 
@@ -504,7 +497,6 @@
 
         .homeowners_logo {
           z-index: 1000;
-          // padding-top: 7%;
 
           .homeowners_img_logo {
             width: 31vw;
@@ -575,6 +567,7 @@
       padding: 0;
       height: auto;
       position: static;
+      bottom: 0;
 
       .homeowners_images_right {
         display: none;
