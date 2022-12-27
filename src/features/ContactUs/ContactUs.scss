@@ -36,7 +36,7 @@
       color: $summit-white;
       font-size: 28px;
       font-family: $ghost;
-      margin-bottom: 5%;
+      margin-bottom: 18px;
     }
 
     .cf_close {
@@ -53,7 +53,7 @@
     border: none;
     background-color: $cosmic-black;
     font-size: 16px;
-    height: 12%;
+    height: 8%;
     color: $charlice;
     border-radius: none;
   }
@@ -68,7 +68,7 @@
   }
 
   textarea {
-    margin-top: 2%;
+    margin-top: 1%;
     resize: none;
     color: $charlice;
     width: 100%;
@@ -86,7 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 18px;
 
     .cf_send {
       color: $summit-white;
