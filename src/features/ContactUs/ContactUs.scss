@@ -52,7 +52,7 @@
     outline: none;
     border: none;
     background-color: $cosmic-black;
-    font-size: 14px;
+    font-size: 16px;
     height: 12%;
     color: $summit-white;
     border-radius: none;
@@ -68,6 +68,7 @@
   }
 
   textarea {
+    margin-top: 2%;
     resize: none;
     color: $summit-white;
     width: 100%;
@@ -101,7 +102,7 @@
 
     .cf_logo,
     .cf_logo_sending {
-      width: 24px;
+      width: 28px;
       height: auto;
     }
 
