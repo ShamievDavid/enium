@@ -9,7 +9,7 @@
   width: 480px;
   height: 573px;
   background-color: $cosmic-black;
-  padding: 5% 2.5% 2.5% 2.5%;
+  padding: 70px 35px 35px 35px;
   z-index: 10000;
 
   .contact_us_container_sent {
@@ -54,27 +54,27 @@
     background-color: $cosmic-black;
     font-size: 16px;
     height: 12%;
-    color: $summit-white;
+    color: $charlice;
     border-radius: none;
   }
 
   input {
-    border-top: 0.5px solid $summit-white;
+    border-top: 0.5px solid $charlice;
   }
 
   .input_last {
-    border-bottom: 0.5px solid $summit-white;
+    border-bottom: 0.5px solid $charlice;
     margin-bottom: 1%;
   }
 
   textarea {
     margin-top: 2%;
     resize: none;
-    color: $summit-white;
+    color: $charlice;
     width: 100%;
     height: 60%;
     font-family: $everett-regular;
-    border-bottom: 0.5px solid $summit-white;
+    border-bottom: 0.5px solid $charlice;
   }
 
   .send {
@@ -98,6 +98,7 @@
       padding: 0;
       cursor: pointer;
       outline: inherit;
+      margin-bottom: -10px;
     }
 
     .cf_logo,
@@ -154,7 +155,6 @@
       padding-bottom: 2%;
 
       .cf_title {
-        color: $summit-white;
         font-size: 24px;
         font-family: $ghost;
         margin-bottom: 5%;
@@ -162,7 +162,6 @@
 
       .cf_close {
         display: flex;
-        color: $summit-white;
         font-size: 24px;
         line-height: 1;
       }
@@ -174,17 +173,14 @@
       font-family: $everett-regular;
       font-size: 14px;
       height: 12%;
-      color: $summit-white;
       border-radius: 0;
     }
 
     input {
-      border-top: 0.5px solid $sterling-silver;
       max-height: 40px;
     }
 
     .input_last {
-      border-bottom: 0.5px solid $sterling-silver;
       border-radius: 0;
       margin-bottom: 1%;
       max-height: 40px;
@@ -192,7 +188,6 @@
 
     textarea {
       resize: none;
-      color: $summit-white;
       height: 60%;
       border-radius: 0;
       padding-top: 3%;
@@ -206,7 +201,6 @@
       padding-top: 2%;
 
       .cf_send {
-        color: $summit-white;
         font-family: $ghost;
         font-size: 24px;
       }
