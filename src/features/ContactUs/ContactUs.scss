@@ -34,7 +34,7 @@
     .cf_title {
       display: flex;
       color: $summit-white;
-      font-size: 24px;
+      font-size: 28px;
       font-family: $ghost;
       margin-bottom: 5%;
     }
@@ -43,7 +43,7 @@
       display: none;
       justify-content: flex-end;
       color: $summit-white;
-      font-size: 24px;
+      font-size: 28px;
     }
   }
 
@@ -52,7 +52,7 @@
     outline: none;
     border: none;
     background-color: $cosmic-black;
-    font-size: 12px;
+    font-size: 14px;
     height: 12%;
     color: $summit-white;
     border-radius: none;
@@ -78,7 +78,7 @@
 
   .send {
     color: white;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .cf_footer {
@@ -91,7 +91,7 @@
       color: $summit-white;
       font-family: $ghost;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 28px;
       background: none;
       border: none;
       padding: 0;
