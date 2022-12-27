@@ -15,11 +15,12 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
 
     .logotype {
+      margin-top: 1%;
       width: 150px;
       height: 37px;
     }
@@ -32,6 +33,7 @@
       align-items: center;
       min-width: 50%;
       font-size: $font-small;
+      color: $cosmic-black;
       cursor: pointer;
 
       .nav-contact {
@@ -54,7 +56,7 @@
       .description_title {
         font-family: "everett-regular";
         font-size: $font-medium;
-        color: black;
+        color: $cosmic-black;
       }
 
       .infobox_img_container {
@@ -76,6 +78,7 @@
       line-height: 1.2;
       color: $charlice;
       width: 100%;
+      margin-bottom: -1.3%;
 
       .empty_block {
         width: 50%;
