@@ -8,7 +8,7 @@
   position: absolute;
   width: 25vw;
   height: 52vh;
-  background-color: $jet-black;
+  background-color: $cosmic-black;
   padding: 4% 2% 2% 2%;
   z-index: 10000;
 
@@ -51,7 +51,7 @@
   textarea {
     outline: none;
     border: none;
-    background-color: $jet-black;
+    background-color: $cosmic-black;
     font-size: 1.6vh;
     height: 12%;
     color: $summit-white;
@@ -131,7 +131,6 @@
     position: absolute;
     width: 80%;
     height: 70%;
-    background-color: $jet-black;
     padding: 4%;
     z-index: 10000;
 
@@ -170,7 +169,6 @@
     input,
     textarea {
       outline: none;
-      background-color: black;
       font-family: $everett-regular;
       font-size: 14px;
       height: 12%;
@@ -209,7 +207,6 @@
         color: $summit-white;
         font-family: $ghost;
         font-size: 24px;
-        background-color: $jet-black;
       }
 
       .cf_logo,

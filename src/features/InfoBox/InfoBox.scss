@@ -32,13 +32,25 @@
       letter-spacing: 0.05em;
       align-items: center;
       min-width: 50%;
-      font-size: $font-small;
-      color: $cosmic-black;
+      font-size: 11px;
+
       cursor: pointer;
+
+      .nav-link {
+        color: $cosmic-black;
+      }
+
+      .nav-link:hover {
+        color: $charlice;
+      }
 
       .nav-contact {
         color: $charlice;
         cursor: pointer;
+      }
+
+      .nav-contact:hover {
+        color: $cosmic-black;
       }
     }
   }
@@ -542,7 +554,6 @@
         .description_title {
           font-family: "everett-regular";
           font-size: 24px;
-          color: $jet-black;
           width: 50%;
         }
 
@@ -552,7 +563,6 @@
           width: 50%;
 
           .logo {
-            // position: relative;
             width: 30px;
             height: auto;
           }
@@ -562,10 +572,6 @@
       .description {
         line-height: 1.2;
         width: 100%;
-
-        .empty_block {
-          display: none;
-        }
 
         .description_text {
           width: 100%;

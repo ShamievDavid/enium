@@ -100,6 +100,10 @@
           line-height: 1;
           cursor: pointer;
         }
+
+        .item_learn_more:hover {
+          color: $cosmic-black;
+        }
       }
 
       .item_lending {
@@ -579,7 +583,7 @@
         transform: rotate(-90deg);
         height: auto;
         padding-bottom: 5%;
-        color: $cosmic-black;
+        margin-top: 0;
       }
 
       .learn_more {
