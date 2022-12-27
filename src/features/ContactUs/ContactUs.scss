@@ -6,10 +6,10 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 25vw;
-  height: 52vh;
+  width: 480px;
+  height: 573px;
   background-color: $cosmic-black;
-  padding: 4% 2% 2% 2%;
+  padding: 5% 2.5% 2.5% 2.5%;
   z-index: 10000;
 
   .contact_us_container_sent {
@@ -34,7 +34,7 @@
     .cf_title {
       display: flex;
       color: $summit-white;
-      font-size: 2vh;
+      font-size: 24px;
       font-family: $ghost;
       margin-bottom: 5%;
     }
@@ -43,7 +43,7 @@
       display: none;
       justify-content: flex-end;
       color: $summit-white;
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 
@@ -52,7 +52,7 @@
     outline: none;
     border: none;
     background-color: $cosmic-black;
-    font-size: 1.6vh;
+    font-size: 12px;
     height: 12%;
     color: $summit-white;
     border-radius: none;
@@ -78,7 +78,7 @@
 
   .send {
     color: white;
-    font-size: $font-m;
+    font-size: 24px;
   }
 
   .cf_footer {
@@ -91,7 +91,7 @@
       color: $summit-white;
       font-family: $ghost;
       font-weight: 400;
-      font-size: 2.2vh;
+      font-size: 24px;
       background: none;
       border: none;
       padding: 0;
@@ -101,7 +101,8 @@
 
     .cf_logo,
     .cf_logo_sending {
-      width: 1.4vw;
+      width: 24px;
+      height: auto;
     }
 
     .cf_logo_sending {
