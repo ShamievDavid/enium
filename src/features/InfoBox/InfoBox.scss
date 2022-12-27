@@ -493,6 +493,7 @@
     position: fixed;
     top: 1%;
     box-sizing: border-box;
+    overflow: hidden;
 
     .navigation {
       flex-direction: column;
