@@ -127,7 +127,7 @@
         }
 
         .lending_item_number {
-          font-family: $everett-medium;
+          font-family: $everett-regular;
           font-size: 72px;
         }
 
@@ -186,7 +186,7 @@
           z-index: 1000;
 
           .lending_img_logo {
-            width: 210px;
+            width: 180px;
             height: auto;
           }
         }
@@ -288,7 +288,6 @@
           }
 
           .lending_item_number {
-            font-family: $everett-medium;
             font-size: 64px;
           }
 
@@ -412,7 +411,6 @@
     .lending_footer {
       position: static;
       height: auto;
-      width: 100vw;
       padding: 0;
       background-image: url("../../../../../public/assets/images/lending_partners_bg_mobile.jpg");
       background-repeat: no-repeat;
@@ -457,7 +455,6 @@
           }
 
           .lending_item_number {
-            font-family: $everett-regular;
             font-size: 72px;
             line-height: 1;
           }

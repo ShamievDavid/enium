@@ -49,14 +49,12 @@ function App() {
         />
       )}
 
-      {dealers && (
-        <Dealers
-          dealers={dealers}
-          setDealers={setDealers}
-          showForm={showForm}
-          setShowForm={setShowForm}
-        />
-      )}
+      <Dealers
+        dealers={dealers}
+        setDealers={setDealers}
+        showForm={showForm}
+        setShowForm={setShowForm}
+      />
     </div>
   );
 }
