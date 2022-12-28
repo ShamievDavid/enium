@@ -193,9 +193,10 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 80%;
-    height: 70%;
-    padding: 4%;
+    box-sizing: border-box;
+    width: 375px;
+    height: 530px;
+    padding: 20px 20px 20px 20px;
     z-index: 10000;
 
     .contact_us_container_sent {
@@ -213,18 +214,19 @@
     }
 
     .cf_header {
-      padding-bottom: 2%;
+      padding: 0;
 
       .cf_title {
         font-size: 24px;
         font-family: $ghost;
-        margin-bottom: 5%;
+        margin-bottom: 18px;
       }
 
       .cf_close {
         display: flex;
         font-size: 24px;
         line-height: 1;
+        margin-top: -5px;
       }
     }
 
@@ -255,11 +257,27 @@
       box-sizing: border-box;
     }
 
+    .cf_textarea_box {
+      position: relative;
+      margin-bottom: -8px;
+
+      .cf_input_name {
+        height: 218px;
+        padding-top: 12px;
+      }
+
+      .cf_error {
+        position: absolute;
+        font-family: $everett-regular;
+        top: 12px;
+        right: 0;
+      }
+    }
+
     .cf_footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 2%;
 
       .cf_send {
         font-family: $ghost;
@@ -268,7 +286,7 @@
 
       .cf_logo,
       .cf_logo_sending {
-        width: 8%;
+        width: 23.58px;
       }
 
       .cf_logo_sending {
