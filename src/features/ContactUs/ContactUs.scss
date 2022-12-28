@@ -54,6 +54,11 @@
   .cf_header_back {
     border: none;
   }
+
+  select {
+    all: none;
+  }
+
   select,
   option,
   input,
