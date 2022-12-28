@@ -2,7 +2,7 @@
   font-family: "everett-medium";
   src: url("/public/assets/fonts/Everett/TWKEverett-Medium-web.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -10,14 +10,14 @@
   font-family: "everett-regular";
   src: url("/public/assets/fonts/Everett/TWKEverett-Regular-web.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ghost-regular";
   src: url("/public/assets/fonts/Ghost/TWKGhost-Regular.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
