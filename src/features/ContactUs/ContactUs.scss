@@ -213,7 +213,8 @@
       height: 100%;
     }
 
-    .cf_header {
+    .cf_header,
+    .cf_header_back {
       padding: 0;
 
       .cf_title {
@@ -231,7 +232,8 @@
     }
 
     input,
-    textarea {
+    textarea,
+    select {
       outline: none;
       font-family: $everett-regular;
       font-size: 14px;
@@ -279,7 +281,8 @@
       justify-content: space-between;
       align-items: center;
 
-      .cf_send {
+      .cf_send,
+      .cf_send_back {
         font-family: $ghost;
         font-size: 24px;
       }
