@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./ContactUs.scss";
 import { useForm } from "react-hook-form";
 
@@ -8,7 +8,6 @@ import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../api/email";
 export const ContactUs = ({ setShowForm, showForm }) => {
   const [sentMessage, setSentMessage] = useState(false);
   const [loading, setLoading] = useState(false);
-  const form = useRef();
 
   const {
     register,
