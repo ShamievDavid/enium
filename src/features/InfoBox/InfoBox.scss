@@ -103,92 +103,6 @@
   }
 }
 
-// @media (max-width: 1500px) {
-//   .info {
-//     display: flex;
-//     flex-direction: column;
-//     box-sizing: border-box;
-//     justify-content: space-between;
-//     width: 50%;
-//     height: 100vh;
-//     padding: 2%;
-//     background-color: $summit-white;
-//     z-index: 2;
-
-//     .navigation {
-//       display: flex;
-//       width: 100%;
-
-//       .logotype {
-//         width: 150px;
-//         height: 37px;
-//       }
-
-//       .nav-menu {
-//         font-family: "everett-medium";
-//         display: flex;
-//         justify-content: space-between;
-//         letter-spacing: 0.05em;
-//         align-items: center;
-//         min-width: 50%;
-//         font-size: 10px;
-//         cursor: pointer;
-
-//         .nav-contact {
-//           color: $charlice;
-//           cursor: pointer;
-//         }
-//       }
-//     }
-
-//     .info_footer {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       height: auto;
-
-//       .info_footer_header {
-//         display: flex;
-//         width: 100%;
-
-//         .description_title {
-//           font-family: "everett-regular";
-//           font-size: 22px;
-//           color: black;
-//         }
-
-//         .infobox_img_container {
-//           width: 50%;
-
-//           .logo {
-//             position: relative;
-//             width: 8%;
-//             height: auto;
-//           }
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         justify-content: space-between;
-//         font-family: "ghost-regular";
-//         font-size: 22px;
-//         line-height: 1.2;
-//         color: $charlice;
-//         width: 100%;
-
-//         .empty_block {
-//           width: 50%;
-//         }
-
-//         .description_text {
-//           width: 50%;
-//         }
-//       }
-//     }
-//   }
-// }
-
 @media (max-width: 1260px) {
   .info {
     display: flex;
@@ -483,6 +397,104 @@
   }
 }
 
+@media (max-width: 900px) and (max-height: 415px) {
+  .info {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+
+    .navigation {
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+
+      .logotype {
+        width: 100%;
+        height: auto;
+      }
+
+      .nav-menu {
+        font-family: "everett-medium";
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.05em;
+        margin-top: 0;
+        position: fixed;
+        min-width: 90%;
+        bottom: 10px;
+
+        .nav-link {
+          display: flex;
+          font-size: 10px;
+        }
+
+        .nav-contact {
+          color: $charlice;
+          cursor: pointer;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .info_footer {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      width: 92%;
+      bottom: 6%;
+      left: 0;
+      padding: 4vw;
+
+      .info_footer_header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+        .description_title {
+          font-family: "everett-regular";
+          font-size: 19px;
+          color: $jet-black;
+          width: 50%;
+        }
+
+        .infobox_img_container {
+          display: flex;
+          justify-content: flex-end;
+          width: 50%;
+
+          .logo {
+            position: relative;
+            width: 12%;
+            height: auto;
+          }
+        }
+      }
+
+      .description {
+        line-height: 1.2;
+        width: 100%;
+
+        .empty_block {
+          display: none;
+        }
+
+        .description_text {
+          width: 100%;
+          font-size: 16px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 420px) {
   .info {
     justify-content: space-between;
@@ -697,104 +709,6 @@
 
       .logotype {
         width: 100%;
-      }
-
-      .nav-menu {
-        font-family: "everett-medium";
-        display: flex;
-        justify-content: space-between;
-        letter-spacing: 0.05em;
-        margin-top: 0;
-        position: fixed;
-        min-width: 90%;
-        bottom: 10px;
-
-        .nav-link {
-          display: flex;
-          font-size: 10px;
-        }
-
-        .nav-contact {
-          color: $charlice;
-          cursor: pointer;
-          font-size: 10px;
-        }
-      }
-    }
-
-    .info_footer {
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      justify-content: space-between;
-      height: auto;
-      width: 92%;
-      bottom: 6%;
-      left: 0;
-      padding: 4vw;
-
-      .info_footer_header {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        align-items: center;
-
-        .description_title {
-          font-family: "everett-regular";
-          font-size: 19px;
-          color: $jet-black;
-          width: 50%;
-        }
-
-        .infobox_img_container {
-          display: flex;
-          justify-content: flex-end;
-          width: 50%;
-
-          .logo {
-            position: relative;
-            width: 12%;
-            height: auto;
-          }
-        }
-      }
-
-      .description {
-        line-height: 1.2;
-        width: 100%;
-
-        .empty_block {
-          display: none;
-        }
-
-        .description_text {
-          width: 100%;
-          font-size: 16px;
-          margin: 0;
-          padding: 0;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 900px) and (max-height: 415px) {
-  .info {
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 5%;
-
-    .navigation {
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%;
-
-      .logotype {
-        width: 100%;
-        height: auto;
       }
 
       .nav-menu {
