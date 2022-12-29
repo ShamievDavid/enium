@@ -90,7 +90,7 @@
       line-height: 1.2;
       color: $charlice;
       width: 100%;
-      margin-bottom: -1.3%;
+      margin-bottom: -1.6%;
 
       .empty_block {
         width: 50%;
@@ -641,7 +641,7 @@
       position: absolute;
       flex-direction: column;
       justify-content: space-between;
-      height: 48%;
+      height: auto;
       width: 92%;
       bottom: 6%;
       left: 0;
@@ -692,14 +692,14 @@
   }
 }
 
-@media (max-height: 548px) and (max-width: 415px) {
+@media (max-height: 548px) {
   .info {
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 5%;
-    margin-top: 4%;
+    margin: 0;
 
     .navigation {
       flex-direction: column;
@@ -889,14 +889,115 @@
   }
 }
 
+@media (max-width: 375px) {
+  .info {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    .navigation {
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+
+      .logotype {
+        width: 100%;
+      }
+
+      .nav-menu {
+        font-family: "everett-medium";
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.05em;
+        margin-top: 0;
+        position: fixed;
+        min-width: 90%;
+        bottom: 10px;
+        display: none;
+
+        .nav-link {
+          display: flex;
+          font-size: 10px;
+        }
+
+        .nav-contact {
+          color: $charlice;
+          cursor: pointer;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .info_footer {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 44%;
+      width: 92%;
+      bottom: 6%;
+      left: 0;
+      padding: 4vw;
+
+      .info_footer_header {
+        visibility: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+        .description_title {
+          font-family: "everett-regular";
+          font-size: 19px;
+          color: $jet-black;
+          width: 50%;
+        }
+
+        .infobox_img_container {
+          display: flex;
+          justify-content: flex-end;
+          width: 50%;
+
+          .logo {
+            position: relative;
+            width: 12%;
+            height: auto;
+          }
+        }
+      }
+
+      .description {
+        visibility: hidden;
+        line-height: 1.2;
+        width: 100%;
+
+        .empty_block {
+          display: none;
+        }
+
+        .description_text {
+          width: 100%;
+          font-size: 16px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (max-height: 225px) {
   .info {
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    // padding: 5%;
-    // margin-top: 4%;
+    padding: 0;
+    margin: 0;
+
     .navigation {
       flex-direction: column;
       justify-content: space-between;

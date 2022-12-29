@@ -1488,4 +1488,11 @@
   .video_container_active {
     display: none;
   }
+}
+
+@media (max-width: 375px) {
+  .video_container,
+  .video_container_active {
+    display: none;
+  }
 } ;
