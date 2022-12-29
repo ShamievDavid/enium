@@ -1482,3 +1482,10 @@
     }
   }
 }
+
+@media (max-height: 548px) {
+  .video_container,
+  .video_container_active {
+    display: none;
+  }
+} ;

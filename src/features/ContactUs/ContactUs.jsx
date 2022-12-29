@@ -128,7 +128,7 @@ export const ContactUs = ({ setShowForm, showForm }) => {
       <div className="cf_textarea_box">
         <textarea
           name="message"
-          className="cf_input_name"
+          className="cf_input_name_textarea"
           placeholder="Your message"
           {...register("message", { required: "*required" })}
         />

@@ -109,12 +109,14 @@
 
   .cf_textarea_box {
     position: relative;
-    margin-bottom: -9px;
+    // margin-bottom: -9px;
 
-    .cf_input_name {
-      height: 229px;
-      padding-top: 12px;
+    .cf_input_name_textarea {
+      height: 233px;
+
       display: block;
+      padding: 0;
+      padding-top: 12px;
     }
 
     .cf_error {
@@ -157,7 +159,7 @@
       height: auto;
       border: none;
       padding: 0;
-      // margin-left: -20px;
+      margin-left: -20px;
       margin-bottom: -7px;
       cursor: pointer;
       outline: inherit;
