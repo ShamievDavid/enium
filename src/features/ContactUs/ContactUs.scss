@@ -109,10 +109,9 @@
 
   .cf_textarea_box {
     position: relative;
-    // margin-bottom: -9px;
 
     .cf_input_name_textarea {
-      height: 233px;
+      height: 231px;
 
       display: block;
       padding: 0;
@@ -259,16 +258,15 @@
       height: 60%;
       border-radius: 0;
       padding-top: 3%;
-      margin-left: -2px;
       box-sizing: border-box;
     }
 
     .cf_textarea_box {
       position: relative;
-      margin-bottom: -8px;
 
-      .cf_input_name {
+      .cf_input_name_textarea {
         height: 218px;
+        padding: 0;
         padding-top: 12px;
       }
 
