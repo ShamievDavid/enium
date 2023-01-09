@@ -5,7 +5,7 @@
   display: flex;
   width: 54%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
   box-sizing: border-box;
   background-color: $sterling-silver;
@@ -280,6 +280,152 @@
 //     }
 //   }
 // }
+
+@media (max-height: 800px) {
+  .video_container,
+  .video_container_active {
+    display: flex;
+    width: 54%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    box-sizing: border-box;
+    background-color: $sterling-silver;
+    z-index: 1;
+    padding: 2% 2% 2% 0;
+    transition: right 1s ease-out;
+
+    .video_bookmark {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 8%;
+      cursor: pointer;
+
+      .arrow-rigth {
+        font-size: 24px;
+        font-family: "everett-medium";
+        margin-top: -10%;
+        color: $cosmic-black;
+      }
+
+      .learn_more {
+        font-size: 11px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-family: "everett-medium";
+        line-height: 1;
+        color: $cosmic-black;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+      width: 82%;
+      height: 100%;
+
+      .upper_text {
+        font-family: "ghost-regular";
+        font-size: 22px;
+        line-height: 1.3;
+        margin-top: -0.4%;
+        padding-bottom: 0;
+        color: $cosmic-black;
+      }
+
+      .items_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        color: $cosmic-black;
+
+        .item_lending,
+        .item_homeowners,
+        .item_dealers {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 50%;
+          padding-bottom: 2%;
+
+          .item_title {
+            font-family: "everett-regular";
+            font-size: 22px;
+            line-height: 1;
+          }
+
+          .paragraph_homeowners {
+            padding-right: 5%;
+          }
+
+          p,
+          .p_homeowners {
+            padding: 4% 0 2% 0;
+            margin: 0;
+            font-family: "ghost-regular";
+            font-size: 15px;
+          }
+
+          .item_learn_more {
+            color: $summit-white;
+            font-family: "everett-medium";
+            font-size: 11px;
+            line-height: 1;
+            cursor: pointer;
+          }
+
+          .item_learn_more:hover {
+            color: $cosmic-black;
+          }
+        }
+
+        .item_lending {
+          display: block;
+        }
+
+        .item_dealers {
+          margin-top: 4%;
+        }
+      }
+
+      .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+
+        .video_img {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 16 / 9;
+        }
+      }
+    }
+  }
+  .video_container_active {
+    right: 46%;
+    transition: right 1s ease-out;
+
+    .video_bookmark {
+      .arrow-rigth {
+        font-size: $font-medium;
+        padding-top: 6%;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
 
 @media (max-width: 1260px) {
   .video_container,
